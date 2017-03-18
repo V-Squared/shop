@@ -1,0 +1,22 @@
+{
+  "name": "v2-shop",
+  "version": "0.10.0",
+  "description": "The shop of villagetronic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V-Squared/shop.git"
+  },
+  "keywords": [
+    "shop"
+  ],
+  "author": "Lukas Chen",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/V-Squared/shop/issues"
+  },
+  "homepage": "https://github.com/V-Squared/shop#readme"
+}
