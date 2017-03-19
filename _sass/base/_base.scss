@@ -1,0 +1,14 @@
+// import the font
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Light.tff");
+}
+
+// basic styling
+body {
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
