@@ -2,6 +2,7 @@
   "name": "v2-shop",
   "version": "0.10.0",
   "description": "The shop of villagetronic",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

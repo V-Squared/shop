@@ -6,17 +6,16 @@ module.exports = {
 
   output: {
     publicPath: "/",
-    path: path.join(__dirname,"lib"),
+    path: path.join(__dirname,"_javascript/lib"),
     filename: "app.js"
   },
 
   externals: {
-    "angular-material": "ngMaterial",
     "jquery": "jQuery",
     "angular": "angular",
     "angular-sanitize": "ngSanitize",
     "angular-animate": "ngAnimate",
-    "angular-aria": "ngAria"
+    "angular-material": "ngMaterial"
   },
 
   // source map

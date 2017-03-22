@@ -3,12 +3,95 @@
 
 {% include head.html %}
 
-<body ng-controller="mainController as vm">
+<body>
 
 {% include navbar.html %}
 
-<div class="home-content">
+{% include jumbotron.html %}
+
+<!-- We are going to do quick and dirty for now -->
+<!--<div class="home-content container">
   {{ content }}
+</div>-->
+
+<div class="feature-intro-text">
+  <div class="container">
+    <p style="margin:0;">
+    A stylish, clean, and well organized desk is a joy to use and simply feels great. Wait, what? Your desk doesn't look like this? It's overrun by cables and computer gear? ViDock-M reclaims your desk! It docks all your computer stuff and hides it behind your display, effectively turning any computer form factor into an All-in-One.
+    </p>
+  </div>
+</div>
+
+<div class="feature-section">
+  <div class="container">
+    <h3 class="title">
+      Before-After Improvement for YOUR Desk
+      <small>Select your form factor and experience the difference for yourself!</small>
+    </h3>
+    <div class="card card-nav-tabs">
+      <div class="header header-primary">
+        <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+            <ul class="nav nav-tabs"  data-tabs="tabs">
+              <li class="active">
+                <a href="#desktop" data-toggle="tab">
+                  {% include icons/desktop-tower.html %}
+                  Desktop
+                </a>
+              </li>
+              <li>
+                <a href="#tablet" data-toggle="tab">
+                  {% include icons/tablet-android.html %}
+                  Tablet
+                </a>
+              </li>
+              <li>
+                <a href="#notebook" data-toggle="tab">
+                  {% include icons/laptop-windows.html %}
+                  Notebook
+                </a>
+              </li>
+              <li>
+                <a href="#mini-pc" data-toggle="tab">
+                  {% include icons/square-outline.html %}
+                  Mini-PC
+                </a>
+              </li>
+              <li>
+                <a href="#wacom" data-toggle="tab">
+                  {% include icons/triangle-outline.html %}
+                  Wacom
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tab-content">
+          <div class="tab-pane active" id="desktop">
+            <p>Modular All-in-One Platform</p>
+            <img  class="img-responsive" src="/images/home/before-after.jpg" alt="before after picture of your desk with / without vidock M">
+          </div>
+          <div class="tab-pane" id="tablet">
+            <p>Modular All-in-One Docking</p>
+            <img class="img-responsive" src="/images/home/before-after.jpg" alt="before after picture of your desk with / without vidock M">
+          </div>
+          <div class="tab-pane" id="notebook">
+            <p>Modular All-in-One Docking</p>
+            <img class="img-responsive" src="/images/home/before-after.jpg" alt="before after picture of your desk with / without vidock M">
+          </div>
+          <div class="tab-pane" id="mini-pc">
+            <p>Modular All-in-One Platform</p>
+            <img class="img-responsive" src="/images/home/before-after.jpg" alt="before after picture of your desk with / without vidock M">
+          </div>
+          <div class="tab-pane" id="wacom">
+            <img class="img-responsive" src="/images/home/before-after.jpg" alt="before after picture of your desk with / without vidock M">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% include footer.html %}
