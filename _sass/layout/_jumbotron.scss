@@ -2,7 +2,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-  height: 600px;
   border:0;
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-size: cover;
@@ -12,12 +11,27 @@
     position: absolute;
     bottom: 10px;
     width: 100%;
+    transition: all 0.25s ease-in-out;
+
+    @include media-query($on-mobile) {
+      position: static;
+      background: $brand-700;
+    }
 
     .title {
       color: #FFF;
       text-align: center;
+      transition: font-size 0.25s ease-in-out;
       margin:0;
       font-size: 48px;
+
+      @include media-query($on-laptop) {
+        font-size: 40px;
+      }
+
+      @include media-query($on-mobile) {
+        font-size: 30px;
+      }
     }
   }
 }
