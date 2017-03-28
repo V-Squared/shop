@@ -3,19 +3,46 @@
   margin: 0;
   padding: 0;
   border:0;
+  height: 480px;
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/images/home/home-page-teaser-02.jpg"),
+  center center;
   background-size: cover;
-  background-position: center center;
+  /*background-position: center center;
+  background-image: url("/images/home/home-page-teaser-02.jpg");*/
+
+  @include media-query($on-laptop) {
+    background-image: none;
+    height: auto;
+  }
+
+  @include media-query($on-mobile) {
+    box-shadow: none;
+  }
+
+  .mobile-jumbotron-img {
+    display: none;
+
+    @include media-query($on-laptop) {
+      display: block;
+    }
+  }
 
   > .page-header-content {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     width: 100%;
     transition: all 0.25s ease-in-out;
 
     @include media-query($on-mobile) {
       position: static;
-      background: $brand-700;
+      background: $brand-color;
     }
 
     .title {
@@ -23,11 +50,7 @@
       text-align: center;
       transition: font-size 0.25s ease-in-out;
       margin:0;
-      font-size: 48px;
-
-      @include media-query($on-laptop) {
-        font-size: 40px;
-      }
+      font-size: 35px;
 
       @include media-query($on-mobile) {
         font-size: 25px;

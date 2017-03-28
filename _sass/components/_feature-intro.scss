@@ -1,4 +1,5 @@
 .feature-intro-text {
+  transition: all 0.25s ease-in-out;
   padding: 10px 0;
   background-color: $gray-200;
   text-align: center;
@@ -8,5 +9,12 @@
 
   @include media-query($on-mobile) {
     font-size: 14px;
+  }
+
+  &.intro-primary {
+    @include media-query($on-mobile) {
+      background-color: $brand-secondary;
+      color: rgba(255, 255, 255, 0.87);
+    }
   }
 }
