@@ -7,21 +7,18 @@
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-position: center center;
-  background-image: url("https://v-squared.github.io/shop/images/home/home-page-teaser-02.jpg");
-
-  @include media-query($on-laptop) {
-    background-image: none;
-    height: auto;
-  }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.3)), url("https://v-squared.github.io/shop/images/home/home-page-teaser-02.jpg");
 
   @include media-query($on-mobile) {
     box-shadow: none;
+    background-image: none;
+    height: auto;
   }
 
   .mobile-jumbotron-img {
     display: none;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-mobile) {
       display: block;
     }
   }
@@ -43,9 +40,11 @@
       transition: font-size 0.25s ease-in-out;
       margin:0;
       font-size: 35px;
+      text-shadow: 0 0 20px black;
 
       @include media-query($on-mobile) {
         font-size: 25px;
+        text-shadow: none;
       }
     }
   }

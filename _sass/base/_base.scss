@@ -12,3 +12,11 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
 }
+
+@media (min-width: $on-mobile) {
+  .container {
+    max-width: 1400px;
+    width: auto;
+    padding: 0 24px;
+  }
+}

@@ -1,10 +1,38 @@
 .feature-section {
-  padding: 40px 0;
+  padding: 60px 0;
 
   .title {
-    margin-top: 10px;
+    //margin-top: 10px;
     margin-bottom: 20px;
     min-height: 32px;
     line-height: 25px;
+  }
+}
+
+.full-width-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+
+  .full-width-content {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+
+    .title {
+      font-size: 28px;
+      color: #FFF;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.87);
+      text-align: center;
+      font-size:15px;
+    }
   }
 }
