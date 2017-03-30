@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+$baseurl: "{{site.baseurl}}";
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 
 @import
@@ -24,7 +26,8 @@
 
 @import
   "components/feature-intro",
-  "components/tabs";
+  "components/tabs",
+  "components/feature-full-width-image";
 
 @import
   "pages/home";

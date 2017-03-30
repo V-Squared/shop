@@ -1,0 +1,56 @@
+.full-width-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 0;
+
+  @include media-query($on-mobile) {
+    background-image: none  !important;
+    height: auto;
+  }
+
+  .mobile-full-width-img {
+    display: none;
+
+    @include media-query($on-mobile) {
+      display: block;
+    }
+  }
+
+  .full-width-content {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+
+    @include media-query($on-mobile) {
+      position: static;
+      background-color: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: #FFF;
+      text-align: center;
+      margin-bottom: 5px;
+
+      @include media-query($on-mobile) {
+        color: inherit;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.87);
+      text-align: center;
+      font-size:15px;
+
+      @include media-query($on-mobile) {
+        color: inherit;
+      }
+    }
+  }
+}
