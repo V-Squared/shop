@@ -12,10 +12,7 @@ module.exports = {
 
   externals: {
     "jquery": "jQuery",
-    "angular": "angular",
-    "angular-sanitize": "ngSanitize",
-    "angular-animate": "ngAnimate",
-    "angular-material": "ngMaterial"
+    "angular": "angular"
   },
 
   // source map
