@@ -1,11 +1,11 @@
 import * as angular from "angular";
-// import * as ngSanitize from "angular-sanitize";
+ import * as ngSanitize from "angular-sanitize";
 // import * as ngAnimate  from "angular-animate";
 // import * as ngMaterial from "angular-material";
 
 angular
   .module("app", [
-    // ngSanitize
+    ngSanitize
     //ngAnimate,
     //ngMaterial
   ]);
