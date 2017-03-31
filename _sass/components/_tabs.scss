@@ -1,9 +1,52 @@
+
 .card-nav-tabs {
   width: auto;
   margin-top: 19px;
 
+  &.tab-material {
+    margin-top:0;
+  }
+
+  .header-full {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  .header-material {
+    margin-top: 0 !important;
+
+    .nav-tabs {
+      padding:0;
+
+      > li{
+        position: relative;
+
+        &::after {
+          height: 2px;
+          width: 100%;
+          display: block;
+          content: " ";
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          transition: all .2s ease;
+          background: transparent;
+        }
+
+        &:hover, &.active {
+          &::after {
+            background: $brand-accent;
+          }
+        }
+      }
+    }
+
+  }
+
   .header-gray {
-    background: linear-gradient(60deg, $gray-400, $gray-700);
+    //background: linear-gradient(60deg, $gray-400, $gray-700);
   }
 
   .header-thin {
@@ -12,8 +55,8 @@
 
     li {
       > a {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        //padding-top: 5px;
+        //padding-bottom: 5px;
       }
     }
   }

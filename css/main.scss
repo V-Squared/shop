@@ -25,9 +25,10 @@ $baseurl: "{{site.baseurl}}";
   "layout/footer";
 
 @import
-  "components/feature-intro",
   "components/tabs",
-  "components/feature-full-width-image";
+  "components/feature-intro",
+  "components/feature-full-width-image",
+  "components/feature-modules";
 
 @import
   "pages/home";
