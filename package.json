@@ -30,7 +30,13 @@
     "bootstrap-material-design": "^0.5.10",
     "gsap": "^1.19.1",
     "jquery": "^3.2.0",
-    "ngstorage": "^0.3.11"
+    "juxtaposejs": "^1.1.6",
+    "ng-juxtapose": "^1.0.2",
+    "ngstorage": "^0.3.11",
+    "videogular": "^1.4.4",
+    "videogular-buffering": "^1.4.4",
+    "videogular-controls": "^1.4.4",
+    "videogular-overlay-play": "^1.4.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

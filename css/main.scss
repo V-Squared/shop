@@ -28,7 +28,11 @@ $baseurl: "{{site.baseurl}}";
   "components/tabs",
   "components/feature-intro",
   "components/feature-full-width-image",
-  "components/feature-modules";
+  "components/feature-modules",
+  "components/juxtapose";
 
 @import
   "pages/home";
+
+@import
+  "vendor/juxtapose";
