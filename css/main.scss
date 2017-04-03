@@ -25,11 +25,12 @@ $baseurl: "{{site.baseurl}}";
   "layout/footer";
 
 @import
+  "components/juxtapose",
+  "components/videogular",
   "components/tabs",
   "components/feature-intro",
   "components/feature-full-width-image",
-  "components/feature-modules",
-  "components/juxtapose";
+  "components/feature-modules";
 
 @import
   "pages/home";

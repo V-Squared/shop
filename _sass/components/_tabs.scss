@@ -1,7 +1,8 @@
-
 .card-nav-tabs {
   width: auto;
   margin-top: 19px;
+
+
 
   &.tab-material {
     margin-top:0;
@@ -29,7 +30,7 @@
           width: 100%;
           display: block;
           content: " ";
-          bottom: 0;
+          bottom: 1px;
           left: 0;
           position: absolute;
           transition: all .2s ease;
@@ -69,6 +70,16 @@
 
     > li {
       float: none;
+
+      @include media-query($on-desktop) {
+        .material-icons {
+          margin-right: 0;
+        }
+
+        span {
+          display: none;
+        }
+      }
     }
   }
 

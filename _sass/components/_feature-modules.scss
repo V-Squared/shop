@@ -8,6 +8,11 @@
         padding: 20px 0;
         background-color: $brand-color;
         color: #FFF;
+        font-size: 1.6em;
+
+        @include media-query($on-laptop) {
+          font-size: 18px;
+        }
 
         > small {
           color: rgba(255, 255, 255, 0.87);
