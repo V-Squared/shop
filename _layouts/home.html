@@ -139,31 +139,31 @@
                   <div class="nav-tabs-wrapper">
                     <ul class="nav nav-tabs"  data-tabs="tabs">
                       <li class="active">
-                        <a href="#mini-pc1" data-toggle="tab">
-                          {% include icons/mini.html %}
-                          <span>Mini-PC</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#desktop1" data-toggle="tab">
+                        <a href="#how-desktop" data-toggle="tab">
                           {% include icons/desktop-tower.html %}
                           <span>Desktop</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#notebook1" data-toggle="tab">
+                        <a href="#how-mini" data-toggle="tab">
+                          {% include icons/mini.html %}
+                          <span>Mini-PC</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#how-laptop" data-toggle="tab">
                           {% include icons/laptop-windows.html %}
                           <span>Laptop</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#tablet1" data-toggle="tab">
+                        <a href="#how-tablet" data-toggle="tab">
                           {% include icons/tablet-android.html %}
                           <span>Tablet</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#gpu1" data-toggle="tab">
+                        <a href="#how-gpu" data-toggle="tab">
                           {% include icons/gpu-card.html %}
                           <span>GPU</span>
                         </a>
@@ -174,10 +174,10 @@
               </div>
               <div class="content">
                 <div class="tab-content">
-                  <div class="tab-pane active" id="mini-pc1">
+                  <div class="tab-pane active" id="how-desktop">
                     <videogular vg-theme="vm.videogular.theme">
                       <vg-media
-                        vg-src="'{{site.baseurl}}/assets/ViStand-NoteBook-Anim-V2-Moup.mp4'">
+                        vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-DeskTop-Anim-V1-Moup.mp4'">
                       </vg-media>
                       <vg-controls>
                         <vg-play-pause-button></vg-play-pause-button>
@@ -196,25 +196,74 @@
                       <vg-overlay-play></vg-overlay-play>
                     </videogular>
                   </div>
-                  <div class="tab-pane" id="desktop1">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DhNULqT32iE" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                  <div class="tab-pane" id="how-mini">
+                    <videogular vg-theme="vm.videogular.theme">
+                      <vg-media
+                          vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim-V11-720p.mp4'">
+                      </vg-media>
+                      <vg-controls>
+                        <vg-play-pause-button></vg-play-pause-button>
+                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
+                        <vg-scrub-bar>
+                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                        </vg-scrub-bar>
+                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
+                        <vg-volume>
+                          <vg-mute-button></vg-mute-button>
+                          <vg-volume-bar></vg-volume-bar>
+                        </vg-volume>
+                        <vg-fullscreen-button></vg-fullscreen-button>
+                      </vg-controls>
+
+                      <vg-overlay-play></vg-overlay-play>
+                    </videogular>
                   </div>
-                  <div class="tab-pane" id="notebook1">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EBKniD7dW-M" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                  <div class="tab-pane" id="how-laptop">
+                    <videogular vg-theme="vm.videogular.theme">
+                      <vg-media
+                          vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Notebook/ViStand-NoteBook-Anim-V2-Moup.mp4'">
+                      </vg-media>
+                      <vg-controls>
+                        <vg-play-pause-button></vg-play-pause-button>
+                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
+                        <vg-scrub-bar>
+                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                        </vg-scrub-bar>
+                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
+                        <vg-volume>
+                          <vg-mute-button></vg-mute-button>
+                          <vg-volume-bar></vg-volume-bar>
+                        </vg-volume>
+                        <vg-fullscreen-button></vg-fullscreen-button>
+                      </vg-controls>
+
+                      <vg-overlay-play></vg-overlay-play>
+                    </videogular>
                   </div>
-                  <div class="tab-pane" id="tablet1">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/naZdd8hDSCY" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                  <div class="tab-pane" id="how-tablet">
+                    <videogular vg-theme="vm.videogular.theme">
+                      <vg-media
+                          vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim-V2.mp4'">
+                      </vg-media>
+                      <vg-controls>
+                        <vg-play-pause-button></vg-play-pause-button>
+                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
+                        <vg-scrub-bar>
+                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                        </vg-scrub-bar>
+                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
+                        <vg-volume>
+                          <vg-mute-button></vg-mute-button>
+                          <vg-volume-bar></vg-volume-bar>
+                        </vg-volume>
+                        <vg-fullscreen-button></vg-fullscreen-button>
+                      </vg-controls>
+
+                      <vg-overlay-play></vg-overlay-play>
+                    </videogular>
                   </div>
-                  <div class="tab-pane" id="gpu1">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/naZdd8hDSCY" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                  <div class="tab-pane" id="how-gpu">
+                    <p>Item not available</p>
                   </div>
                 </div>
               </div>
