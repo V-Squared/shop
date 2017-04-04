@@ -38,15 +38,15 @@
                   <div class="nav-tabs-wrapper">
                     <ul class="nav nav-tabs"  data-tabs="tabs">
                       <li class="active">
-                        <a href="#mini-pc" data-toggle="tab">
-                          {% include icons/crop-square.html %}
-                          <span>Mini-PC</span>
-                        </a>
-                      </li>
-                      <li>
                         <a href="#desktop" data-toggle="tab">
                           {% include icons/desktop-tower.html %}
                           <span>Desktop</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#mini-pc" data-toggle="tab">
+                          {% include icons/crop-square.html %}
+                          <span>Mini-PC</span>
                         </a>
                       </li>
                       <li>
@@ -73,16 +73,6 @@
               </div>
               <div class="content">
                 <div class="tab-content">
-                  <div class="tab-pane active" id="mini-pc">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <juxtapose class="embed-responsive-item"
-                                 before-image-url="'{{site.baseurl}}/images/home/Mini-Before.jpg'"
-                                 before-image-label="'Before'"
-                                 after-image-url="'{{site.baseurl}}/images/home/Mini-After.jpg'"
-                                 after-image-label="'After'">
-                      </juxtapose>
-                    </div>
-                  </div>
                   <div class="tab-pane" id="desktop">
                     <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
@@ -92,6 +82,16 @@
                                after-image-label="'After'">
                     </juxtapose>
                       </div>
+                  </div>
+                  <div class="tab-pane active" id="mini-pc">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <juxtapose class="embed-responsive-item"
+                                 before-image-url="'{{site.baseurl}}/images/home/Mini-Before.jpg'"
+                                 before-image-label="'Before'"
+                                 after-image-url="'{{site.baseurl}}/images/home/Mini-After.jpg'"
+                                 after-image-label="'After'">
+                      </juxtapose>
+                    </div>
                   </div>
                   <div class="tab-pane" id="notebook">
                     <div class="embed-responsive embed-responsive-16by9">
