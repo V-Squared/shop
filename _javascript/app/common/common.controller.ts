@@ -12,7 +12,7 @@ export class CommonController implements ICommonController {
 
   constructor() {
     this.videogular = {
-      theme: "/css/videogular.css",
+      theme: "css/videogular.css",
       plugins: {}
     };
   }
