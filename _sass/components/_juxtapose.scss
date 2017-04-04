@@ -2,6 +2,27 @@
   width: 100% !important;
   height: 100% !important;
 
+  .jx-image {
+    .jx-label {
+      float: none !important;
+      top: auto !important;
+      bottom: 0 !important;
+      position: absolute !important;
+    }
+
+    &.jx-left {
+      .jx-label {
+        left:0;
+      }
+    }
+
+    &.jx-right {
+      .jx-label {
+        right: 0;
+      }
+    }
+  }
+
   .jx-control, .jx-controller {
     background-color: $brand-accent;
   }
