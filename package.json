@@ -33,6 +33,7 @@
     "juxtaposejs": "^1.1.6",
     "ng-juxtapose": "^1.0.2",
     "ngstorage": "^0.3.11",
+    "video.js": "^5.19.1",
     "videogular": "^1.4.4",
     "videogular-buffering": "^1.4.4",
     "videogular-controls": "^1.4.4",

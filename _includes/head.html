@@ -8,9 +8,10 @@
   <meta name="description" content="{% if page.desc%}{{ page.desc | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="theme-color" content="#1976D2">
 
-  <link rel="stylesheet"  href="{{site.baseurl}}/css/bootstrap.min.css">
-  <link rel="stylesheet"  href="{{site.baseurl}}/css/material-kit.css">
-  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl}}">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/material-kit.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/video-js.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ '/css/main.css' | prepend: site.baseurl}}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

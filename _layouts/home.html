@@ -175,92 +175,24 @@
               <div class="content">
                 <div class="tab-content">
                   <div class="tab-pane active" id="how-desktop">
-                    <videogular vg-theme="vm.videogular.theme">
-                      <vg-media
-                        vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-DeskTop-Anim-V1-Moup.mp4'">
-                      </vg-media>
-                      <vg-controls>
-                        <vg-play-pause-button></vg-play-pause-button>
-                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
-                        <vg-scrub-bar>
-                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                        </vg-scrub-bar>
-                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
-                        <vg-volume>
-                          <vg-mute-button></vg-mute-button>
-                          <vg-volume-bar></vg-volume-bar>
-                        </vg-volume>
-                        <vg-fullscreen-button></vg-fullscreen-button>
-                      </vg-controls>
-
-                      <vg-overlay-play></vg-overlay-play>
-                    </videogular>
+                    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-DeskTop-Anim-V1-Moup.mp4" type="video/mp4">
+                      </video>
                   </div>
                   <div class="tab-pane" id="how-mini">
-                    <videogular vg-theme="vm.videogular.theme">
-                      <vg-media
-                          vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim-V11-720p.mp4'">
-                      </vg-media>
-                      <vg-controls>
-                        <vg-play-pause-button></vg-play-pause-button>
-                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
-                        <vg-scrub-bar>
-                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                        </vg-scrub-bar>
-                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
-                        <vg-volume>
-                          <vg-mute-button></vg-mute-button>
-                          <vg-volume-bar></vg-volume-bar>
-                        </vg-volume>
-                        <vg-fullscreen-button></vg-fullscreen-button>
-                      </vg-controls>
-
-                      <vg-overlay-play></vg-overlay-play>
-                    </videogular>
+                    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim-V11-720p.mp4" type="video/mp4">
+                    </video>
                   </div>
                   <div class="tab-pane" id="how-laptop">
-                    <videogular vg-theme="vm.videogular.theme">
-                      <vg-media
-                          vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Notebook/ViStand-NoteBook-Anim-V2-Moup.mp4'">
-                      </vg-media>
-                      <vg-controls>
-                        <vg-play-pause-button></vg-play-pause-button>
-                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
-                        <vg-scrub-bar>
-                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                        </vg-scrub-bar>
-                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
-                        <vg-volume>
-                          <vg-mute-button></vg-mute-button>
-                          <vg-volume-bar></vg-volume-bar>
-                        </vg-volume>
-                        <vg-fullscreen-button></vg-fullscreen-button>
-                      </vg-controls>
-
-                      <vg-overlay-play></vg-overlay-play>
-                    </videogular>
+                    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/ViStand-Laptop-Anim-V2-Moup.mp4" type="video/mp4">
+                    </video>
                   </div>
                   <div class="tab-pane" id="how-tablet">
-                    <videogular vg-theme="vm.videogular.theme">
-                      <vg-media
-                          vg-src="'{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim-V2.mp4'">
-                      </vg-media>
-                      <vg-controls>
-                        <vg-play-pause-button></vg-play-pause-button>
-                        <vg-time-display>{[{ currentTime | date:'mm:ss' }]}</vg-time-display>
-                        <vg-scrub-bar>
-                          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                        </vg-scrub-bar>
-                        <vg-time-display>{[{ timeLeft | date:'mm:ss' }]}</vg-time-display>
-                        <vg-volume>
-                          <vg-mute-button></vg-mute-button>
-                          <vg-volume-bar></vg-volume-bar>
-                        </vg-volume>
-                        <vg-fullscreen-button></vg-fullscreen-button>
-                      </vg-controls>
-
-                      <vg-overlay-play></vg-overlay-play>
-                    </videogular>
+                    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim-V2.mp4" type="video/mp4">
+                    </video>
                   </div>
                   <div class="tab-pane" id="how-gpu">
                     <p>Item not available</p>
