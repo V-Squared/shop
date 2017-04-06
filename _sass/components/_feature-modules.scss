@@ -11,7 +11,7 @@
         font-size: 1.6em;
 
         @include media-query($on-laptop) {
-          font-size: 18px;
+          font-size: 14px;
         }
 
         > small {
