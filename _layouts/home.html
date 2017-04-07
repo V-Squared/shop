@@ -212,6 +212,7 @@
   </div>
 </div>
 
+
 <div class="feature-section full-width-image" id="space-frontier">
   <img class="img-responsive mobile-full-width-img" src="{{site.baseurl}}/images/home/space-frontier-new-warp-m.jpg" alt="">
   <div class="full-width-content">
@@ -232,12 +233,12 @@
 <div class="feature-section feature-modules">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <div class="card">
           <div class="content">
-            <h3 class="title text-center">ViDock-One keeps your device-clutter at Bay</h3>
+            <h3 class="title visible-sm visible-xs text-center">ViDock-One keeps your device-clutter at Bay</h3>
             <div class="card-nav-tabs tab-material">
-              <div class="header header-primary header-full header-material header-thin">
+              <div class="header header-primary header-full header-material header-thin visible-sm visible-xs">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
                     <ul class="nav nav-tabs"  data-tabs="tabs">
@@ -278,7 +279,7 @@
               <div class="content">
                 <div class="tab-content">
                   <div class="tab-pane active" id="bay-keyboard">
-                    <h4 class="hidden-lg">Keyboard</h4>
+                    <h4 class="visible-xs visible-sm">Keyboard</h4>
                   <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/before-after/Keyboard-Used.jpg'"
@@ -289,7 +290,7 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="bay-angled">
-                  <h4 class="hidden-lg">Keyboard Angled</h4>
+                  <h4 class="visible-xs visible-sm">Keyboard Angled</h4>
                   <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/before-after/Keyboard-Used.jpg'"
@@ -300,7 +301,7 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="bay-laptop">
-                  <h4 class="hidden-lg">Laptop</h4>
+                  <h4 class="visible-xs visible-sm">Laptop</h4>
                   <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/before-after/Laptop-Used.jpg'"
@@ -311,7 +312,7 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="bay-tablet">
-                  <h4 class="hidden-lg">Tablet</h4>
+                  <h4 class="visible-xs visible-sm">Tablet</h4>
                   <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/before-after/Tablet-Used.jpg'"
@@ -322,7 +323,7 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="bay-wacom">
-                  <h4 class="hidden-lg">Wacom</h4>
+                  <h4 class="visible-xs visible-sm">Wacom</h4>
                   <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/before-after/Wacom-Used.jpg'"
@@ -337,6 +338,41 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-md-6 hidden-xs hidden-sm">
+        <h3>ViDock-One keeps your device-clutter at Bay</h3>
+        <ul class="nav nav-pills nav-stacked" data-tabs="tabs">
+          <li class="active">
+            <a href="#bay-keyboard" data-toggle="tab">
+              {% include icons/keyboard.html %}
+              Keyboards
+            </a>
+          </li>
+          <li>
+            <a href="#bay-angled" data-toggle="tab">
+              {% include icons/keyboard.html %}
+              Keyboard Angled
+            </a>
+          </li>
+          <li>
+            <a href="#bay-laptop" data-toggle="tab">
+              {% include icons/laptop-windows.html %}
+              Laptop
+            </a>
+          </li>
+          <li>
+            <a href="#bay-angled" data-toggle="tab">
+              {% include icons/tablet-android.html %}
+              Tablet
+            </a>
+          </li>
+          <li>
+            <a href="#bay-wacom" data-toggle="tab">
+              {% include icons/wacom.html %}
+              Wacom
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

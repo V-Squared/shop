@@ -1,0 +1,29 @@
+.nav-stacked {
+  margin-top: 20px;
+  max-width: 200px;
+
+  > li {
+    > a {
+      border-radius: 30px;
+    }
+  }
+}
+
+.nav-pills-icons {
+  max-width: 120px;
+
+  > li {
+    .material-icons {
+      width: 30px;
+      margin: 5px 0;
+    }
+
+    &.active .material-icons {
+      fill: #ffffff;
+    }
+  }
+}
+
+.nav-stacked > li + li {
+  margin-top: 5px;
+}
