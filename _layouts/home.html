@@ -230,7 +230,7 @@
   </div>
 </div>
 
-<div class="feature-section feature-modules" style="background-color: #EBEFF2">
+<div class="feature-section feature-modules vertical-tabs" style="background-color: #EBEFF2">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -243,15 +243,15 @@
                   <div class="nav-tabs-wrapper">
                     <ul class="nav nav-tabs"  data-tabs="tabs">
                       <li class="active">
-                        <a href="#bay-keyboard" data-toggle="tab">
-                          {% include icons/keyboard.html %}
-                          <span>Keyboard</span>
-                        </a>
-                      </li>
-                      <li>
                         <a href="#bay-angled" data-toggle="tab">
                           {% include icons/angled-keyboard.html %}
                           <span>Angled</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#bay-keyboard" data-toggle="tab">
+                          {% include icons/keyboard.html %}
+                          <span>Keyboard</span>
                         </a>
                       </li>
                       <li>
@@ -278,18 +278,7 @@
               </div>
               <div class="content">
                 <div class="tab-content">
-                  <div class="tab-pane active" id="bay-keyboard">
-                    <h4 class="visible-xs visible-sm">Keyboard</h4>
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <juxtapose class="embed-responsive-item"
-                               before-image-url="'{{site.baseurl}}/images/home/before-after/Keyboard-Used.jpg'"
-                               before-image-label="'Used'"
-                               after-image-url="'{{site.baseurl}}/images/home/before-after/Keyboard-Parked.jpg'"
-                               after-image-label="'Parked'">
-                    </juxtapose>
-                  </div>
-                </div>
-                <div class="tab-pane" id="bay-angled">
+                <div class="tab-pane active" id="bay-angled">
                   <h4 class="visible-xs visible-sm">Keyboard Angled</h4>
                   <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
@@ -300,6 +289,17 @@
                     </juxtapose>
                   </div>
                 </div>
+                  <div class="tab-pane" id="bay-keyboard">
+                    <h4 class="visible-xs visible-sm">Keyboard</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <juxtapose class="embed-responsive-item"
+                                 before-image-url="'{{site.baseurl}}/images/home/before-after/Keyboard-Used.jpg'"
+                                 before-image-label="'Used'"
+                                 after-image-url="'{{site.baseurl}}/images/home/before-after/Keyboard-Parked.jpg'"
+                                 after-image-label="'Parked'">
+                      </juxtapose>
+                    </div>
+                  </div>
                 <div class="tab-pane" id="bay-laptop">
                   <h4 class="visible-xs visible-sm">Laptop</h4>
                   <div class="embed-responsive embed-responsive-16by9">
@@ -344,17 +344,17 @@
         <div class="col-md-4">
           <ul class="nav nav-pills nav-stacked" data-tabs="tabs">
           <li class="active">
-            <a href="#bay-keyboard" data-toggle="tab">
-              {% include icons/keyboard.html %}
-              Keyboard
-            </a>
-          </li>
-          <li>
             <a href="#bay-angled" data-toggle="tab">
               {% include icons/angled-keyboard.html %}
               Angled
             </a>
           </li>
+            <li>
+              <a href="#bay-keyboard" data-toggle="tab">
+                {% include icons/keyboard.html %}
+                Keyboard
+              </a>
+            </li>
           <li>
             <a href="#bay-laptop" data-toggle="tab">
               {% include icons/laptop-windows.html %}

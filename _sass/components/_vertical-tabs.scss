@@ -1,31 +1,37 @@
-.nav-stacked {
-  max-width: 180px;
-
-  @include media-query($on-desktop) {
-    max-width: 130px;
+.vertical-tabs {
+  .card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
   }
 
-  > li {
-    > a {
-      border-radius: 30px;
-      text-align: left;
-      padding-left: 25px;
+  .nav-stacked {
+    max-width: 180px;
 
-      @include media-query($on-desktop) {
-        padding-left: 15px;
+    @include media-query($on-desktop) {
+      max-width: 130px;
+    }
+
+    > li {
+      > a {
+        border-radius: 30px;
+        text-align: left;
+        padding-left: 25px;
+
+        @include media-query($on-desktop) {
+          padding-left: 15px;
+        }
+      }
+
+      &.active .material-icons {
+        fill: #ffffff;
       }
     }
-
-    &.active .material-icons {
-      fill: #ffffff;
-    }
   }
-}
 
-.nav-pills-icons {
-  max-width: 120px;
-}
+  .nav-pills-icons {
+    max-width: 120px;
+  }
 
-.nav-stacked > li + li {
-  margin-top: 5px;
+  .nav-stacked > li + li {
+    margin-top: 5px;
+  }
 }

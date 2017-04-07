@@ -7,7 +7,7 @@
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.3)), url("https://v-squared.github.io/shop/images/home/home-page-teaser-02.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.4)), url("https://v-squared.github.io/shop/images/home/home-page-teaser-02.jpg");
 
   @include media-query($on-mobile) {
     box-shadow: none;
