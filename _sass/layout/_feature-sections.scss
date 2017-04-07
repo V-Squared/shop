@@ -13,3 +13,28 @@
     line-height: 25px;
   }
 }
+.feature-dark {
+  background-color: #2D384A;
+
+  .title {
+    color: #FFF;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.54);
+  }
+
+  .nav-pills {
+    > li {
+      > a {
+        color: rgba(255, 255, 255, 0.54);
+      }
+
+      &.active {
+        > a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

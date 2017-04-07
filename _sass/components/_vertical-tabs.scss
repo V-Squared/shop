@@ -6,6 +6,14 @@
     box-shadow: none;
   }
 
+  .nav-right {
+    > li {
+      > a {
+        text-align: right !important;
+      }
+    }
+  }
+
   .nav-stacked {
     max-width: 180px;
 
@@ -36,5 +44,21 @@
 
   .nav-stacked > li + li {
     margin-top: 5px;
+  }
+
+  .nav-thin {
+    &.nav-right {
+      > li {
+        > a {
+          padding: 5px 15px 5px 0;
+        }
+      }
+    }
+
+    > li {
+      > a {
+        padding: 5px 0 5px 15px;
+      }
+    }
   }
 }

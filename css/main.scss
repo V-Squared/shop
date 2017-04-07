@@ -16,7 +16,8 @@ $baseurl: "{{site.baseurl}}";
   "base/reset",
   "base/base",
   "base/typography",
-  "base/icons";
+  "base/icons",
+  "base/helper";
 
 @import
   "layout/navbar",
@@ -31,7 +32,8 @@ $baseurl: "{{site.baseurl}}";
   "components/vertical-tabs",
   "components/feature-intro",
   "components/feature-full-width-image",
-  "components/feature-modules";
+  "components/feature-modules",
+  "components/feature-full";
 
 @import
   "pages/home";

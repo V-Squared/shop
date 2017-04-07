@@ -1,0 +1,18 @@
+.feature-full {
+  padding:0;
+
+  .container-fluid {
+    [class*="col-"] {
+      margin-bottom: 0;
+    }
+  }
+
+  .feature-full-image {
+    height: 450px;
+    padding:0;
+  }
+
+  .feature-full-text {
+    padding: 2%;
+  }
+}
