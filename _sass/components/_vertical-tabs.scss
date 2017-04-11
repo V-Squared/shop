@@ -30,6 +30,11 @@
         @include media-query($on-desktop) {
           padding-left: 15px;
         }
+
+      }
+
+      &.active > a {
+        background-color: $brand-secondary;
       }
 
       &.active .material-icons {
@@ -38,9 +43,6 @@
     }
   }
 
-  .nav-pills-icons {
-    max-width: 120px;
-  }
 
   .nav-stacked > li + li {
     margin-top: 5px;
