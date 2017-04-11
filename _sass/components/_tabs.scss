@@ -15,11 +15,7 @@
 
   .header-material {
     margin-top: 0 !important;
-    margin-bottom: 32px;
-
-    @include media-query($on-desktop) {
-      margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
 
     .nav-tabs {
       padding:0;
