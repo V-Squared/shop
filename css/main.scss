@@ -26,6 +26,7 @@ $baseurl: "{{site.baseurl}}";
   "layout/footer";
 
 @import
+  "components/button",
   "components/juxtapose",
   "components/video",
   "components/tabs",

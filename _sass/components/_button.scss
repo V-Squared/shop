@@ -1,0 +1,39 @@
+.btn-fab {
+  background-color: $brand-accent;
+  padding: 16px !important;
+  position: absolute !important;
+  fill: #FFF;
+  transition: all 0.25s ease-in-out;
+
+  &:hover, &:focus, &:active {
+    background-color: $brand-accent-700;
+  }
+
+  .ripple {
+    background-color: $brand-accent-700 !important;
+  }
+
+  &#jumbo-fab {
+    bottom: -20px;
+    right: 0;
+
+    @include media-query($on-laptop) {
+      right: 20px;
+    }
+
+    @include media-query($on-mobile) {
+      /*bottom: 10px;
+      !*width: 40px;
+      height: 40px;
+      min-width: 40px;
+      padding: 8px !important;*!
+      right: 5px;*/
+      bottom: 40px;
+    }
+
+    @include media-query(418px) {
+      bottom: 82px;
+      right: 10px;
+    }
+  }
+}

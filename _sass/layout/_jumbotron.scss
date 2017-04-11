@@ -34,6 +34,10 @@
       background: $brand-color;
     }
 
+    .container {
+      max-width: 900px;
+    }
+
     .title {
       color: #FFF;
       text-align: center;
@@ -44,6 +48,8 @@
 
       @include media-query($on-mobile) {
         font-size: 25px;
+        padding-top:  15px;
+        padding-bottom: 15px;
         text-shadow: none;
       }
     }
