@@ -1,0 +1,43 @@
+.accordian {
+
+  &.accordian-dark {
+    .panel-title {
+      color: rgba(255, 255, 255, 0.87);
+    }
+    .panel-body {
+      color: rgba(255, 255, 255, 0.54);
+    }
+  }
+
+  .panel {
+    &.panel-open .panel-title{
+      color: $brand-secondary;
+
+      > .material-icons {
+        transform: rotate(180deg);
+      }
+    }
+
+    .panel-heading {
+      background-color: transparent;
+      padding: 25px 10px 5px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+      .panel-title {
+        font-weight: bolder;
+
+        > .material-icons {
+          float: right;
+          transition: all 150ms ease-in-out 0s;
+        }
+      }
+    }
+
+    .panel-collapse {
+      .panel-body {
+        border-top: 0;
+        padding: 15px 0 5px;
+      }
+    }
+  }
+}

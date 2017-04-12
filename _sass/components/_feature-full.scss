@@ -8,8 +8,12 @@
   }
 
   .feature-full-image {
-    height: 500px;
+    height: 510px;
     padding:0;
+
+    @include media-query ($on-laptop) {
+      height: 630px;
+    }
   }
 
   .feature-full-text {

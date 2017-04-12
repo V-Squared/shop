@@ -6,11 +6,11 @@
   transition: all 0.25s ease-in-out;
 
   &:hover, &:focus, &:active {
-    background-color: $brand-accent-700;
+    background-color: $brand-accent-400;
   }
 
   .ripple {
-    background-color: $brand-accent-700 !important;
+    background-color: $brand-accent-400 !important;
   }
 
   &#jumbo-fab {
