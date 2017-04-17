@@ -21,6 +21,14 @@
       max-width: 130px;
     }
 
+    &.text-right {
+      > li {
+        > a {
+          text-align: right;
+        }
+      }
+    }
+
     > li {
       > a {
         border-radius: 30px;
