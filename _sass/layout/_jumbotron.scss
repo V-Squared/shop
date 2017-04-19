@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   border:0;
-  height: 480px;
+  height: 800px;
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.4)), url("https://v-squared.github.io/shop/images/home/home-page-teaser-02.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.4)), url($baseurl + "/images/home/home-page-teaser-03.jpg");
 
   @include media-query($on-mobile) {
     box-shadow: none;
@@ -25,7 +25,8 @@
 
   > .page-header-content {
     position: absolute;
-    bottom: 0;
+    top: 150px;
+    bottom: auto;
     width: 100%;
     transition: all 0.25s ease-in-out;
 
@@ -35,16 +36,17 @@
     }
 
     .container {
-      max-width: 900px;
+      //max-width: 900px;
     }
 
     .title {
-      color: #FFF;
+      color: $brand-700;
       text-align: center;
       transition: font-size 0.25s ease-in-out;
       margin:0;
-      font-size: 35px;
-      text-shadow: 0 0 20px black;
+      font-size: 72px;
+      font-weight: bold;
+      text-shadow: 0 0 20px #999;
 
       @include media-query($on-mobile) {
         font-size: 25px;
