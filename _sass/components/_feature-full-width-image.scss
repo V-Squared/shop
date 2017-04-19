@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 480px;
+  height: 800px;
   padding: 0;
 
   @include media-query($on-mobile) {
@@ -21,7 +21,7 @@
 
   .full-width-content {
     position: absolute;
-    bottom: 15px;
+    top: 155px;
     width: 100%;
     transition: all 0.25s ease-in-out;
 
@@ -37,11 +37,19 @@
     }
 
     .title {
-      font-size: 28px;
-      color: #FFF;
+      font-size: 74px;
+      color: rgba(0, 0, 0, 0.87);
       text-align: center;
+      font-weight: bold;
       margin-bottom: 5px;
-      text-shadow: 0 0 20px black;
+
+      @include media-query($on-mobile) {
+        font-size: 35px;
+      }
+
+      > small {
+        color: $gray-700;
+      }
 
       @include media-query($on-mobile) {
         color: inherit;

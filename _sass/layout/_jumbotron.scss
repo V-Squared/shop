@@ -26,7 +26,6 @@
   > .page-header-content {
     position: absolute;
     top: 180px;
-    bottom: auto;
     width: 100%;
     transition: all 0.25s ease-in-out;
 
@@ -49,7 +48,7 @@
       font-weight: bold;
 
       > small {
-        color: #000;
+        color: $gray-700;
       }
 
       @include media-query($on-mobile) {
