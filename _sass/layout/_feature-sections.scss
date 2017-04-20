@@ -17,6 +17,12 @@
     font-size: 1.2em;
     line-height: 1.5em;
   }
+
+  .tab-content, .panel-body {
+    p + p {
+      margin-top: 10px;
+    }
+  }
 }
 .feature-dark {
   background-color: #2D384A;
@@ -27,6 +33,10 @@
 
   p {
     color: rgba(255, 255, 255, 0.54);
+  }
+
+  strong {
+    color: rgba(255, 255, 255, 0.87);
   }
 
   .nav-pills {
