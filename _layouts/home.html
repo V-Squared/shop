@@ -119,7 +119,14 @@
                   </div>
                   <div class="tab-pane" id="gpu">
                     <h4>External GPU Modular-in-One Docking</h4>
-                    <img class="img-responsive" src="{{site.baseurl}}/images/home/before-after.jpg" alt="before after picture of your desk with / without vidock M">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <juxtapose class="embed-responsive-item"
+                               before-image-url="'{{site.baseurl}}/images/home/eGPU-Before.jpg'"
+                               before-image-label="'Before'"
+                               after-image-url="'{{site.baseurl}}/images/home/eGPU-After.jpg'"
+                               after-image-label="'After'">
+                    </juxtapose>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -200,7 +207,9 @@
                   </div>
                   <div class="tab-pane" id="how-gpu">
                     <h4>External GPU Modular-in-One Docking</h4>
-                    <p>Item not available</p>
+                    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/ViStand-eGPU-Anim.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </div>
               </div>
@@ -796,6 +805,13 @@
   </div>
 </div>
 
+<div class="feature-intro-text" style="background-color: #eee">
+  <div class="container">
+    <p>
+      We are designers, engineers, and gamers who we are very passionate and particular about our computer stations. Frankly, we wanted it all: The modularity of the desktop and the compactness and good looks of the All-in-One. This is why we designed ViDock-One as the first Modular-in-One™ system. To give all of us the power to fully customize our computer stations. So they become an expression of personal style while at the same time being most functional with your individual balance of performance, features and cost.
+    </p>
+  </div>
+</div>
 
 {% include footer.html %}
 
