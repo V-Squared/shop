@@ -17,6 +17,10 @@
   }
 
   .feature-full-text {
-    padding: 30px 30px 20px 30px;
+    padding: 60px 30px 60px 60px;
+
+    @include media-query($on-laptop) {
+      padding: 30px;
+    }
   }
 }
