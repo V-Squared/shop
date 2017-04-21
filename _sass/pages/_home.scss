@@ -7,6 +7,31 @@
     }
   }
 }
+#quality-design {
+  background-image: url($baseurl + "/images/home/quality-teaser.jpg");
+
+  .full-width-content {
+    top: 28px;
+    .title {
+      color: #FFF;
+
+      > small {
+        color: rgba(255, 255, 255, 0.87);
+      }
+    }
+
+    @include media-query($on-mobile) {
+      .title {
+        color: inherit;
+
+        > small {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
 #breakthrough-modular {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)), url($baseurl + "/images/home/breakthrough-sintel-700.jpg");
   height: 700px;
