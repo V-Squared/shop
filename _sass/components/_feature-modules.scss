@@ -1,4 +1,7 @@
 .feature-modules {
+  padding-top: 50px;
+  padding-bottom: 120px;
+
   .title {
     @include media-query($on-desktop) {
       font-size: 1.6em;

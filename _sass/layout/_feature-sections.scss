@@ -1,9 +1,11 @@
 .feature-section {
-  padding-top: 100px;
-  padding-bottom: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
-  .row > [class*="col-"] {
-    margin-bottom: 100px;
+  @include media-query($on-mobile) {
+    .row > [class*="col-"] + [class*="col-"] {
+      margin-top: 50px;
+    }
   }
 
   .title {
