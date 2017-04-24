@@ -1,0 +1,13 @@
+- menu: About
+  url: /about/
+- menu: Blog
+  url: /blog/
+  subitems:
+    - menu: "Article #1"
+      url: "/blog/article-1"
+- menu: Support
+  url: /support/
+- menu: Community
+  url: /community/
+- menu: Shop
+  url: /shop/

@@ -11,21 +11,18 @@
     </div>
     <div class="collapse navbar-collapse" id="navigation-menu">
       <ul class="nav navbar-nav navbar-right">
+        {% for page in site.data.menu %}
         <li>
-          <a href="#hi">About</a>
+          <a href="{{site.baseurl}}{{page.url}}"
+             {% if forloop.last %}id="nav-buy-button" class="btn btn-warning btn-round"{% endif %}>
+            {% if forloop.last %}{% include icons/cart.html %}{% endif %}
+            {{page.menu}}
+          </a>
         </li>
-        <li>
-          <a href="#hi">Blog</a>
-        </li>
-        <li>
-          <a href="#hi">Support</a>
-        </li>
-        <li>
-          <a href="#hi">Community</a>
-        </li>
-        <li>
+        {% endfor %}
+        <!-- <li>
           <a href="#buy" id="nav-buy-button" class="btn btn-warning btn-round">{% include icons/cart.html %} Shop</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>

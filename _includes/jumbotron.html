@@ -1,11 +1,11 @@
 <div class="page-header jumbotron">
-  <img class="img-responsive mobile-jumbotron-img" src="{{site.baseurl}}/images/home/home-page-teaser-m.jpg" alt="">
+  <img class="img-responsive mobile-jumbotron-img" src="{{site.baseurl}}{{/images/home/home-page-teaser-m.jpg}}" alt="">
   <div class="page-header-content">
     <div class="container" style="position: relative">
       <h2 class="title">
-        Reclaim your Desk!
+        {{include.title}}
         <br>
-        <small>ViDock-One</small>
+        <small>{{include.desc}}</small>
       </h2>
       <!--<div class="btn btn-just-icon btn-round btn-reddit btn-fab" id="jumbo-fab">
         {% include icons/cart-plus.html %}
