@@ -37,6 +37,22 @@
   }
 }
 
+.jumbo-primary {
+  background-color: #2196F3;
+  height: 400px;
+
+  > .page-header-content {
+
+    > .container {
+      max-width: 1400px;
+    }
+
+    .title {
+      text-shadow: none;
+    }
+  }
+}
+
 #home-jumbo {
   height: 800px !important;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.4)), url($baseurl + "/images/home/home-page-teaser.jpg");
