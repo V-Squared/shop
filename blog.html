@@ -5,23 +5,23 @@ abstract: This is a blog
 visualURL: /images/home/quality-teaser.jpg
 visualURL-M: /images/home/quality-teaser-m.jpg
 ---
+{% for page in site.data.menu %}
+{% if page.menu == 'Blog' %}
 
-<div class="container">
+<div class="container blog-index" style="margin-top: 20px;">
   <div class="row">
+    {% for blog-entry in page.subitems %}
     <div class="col-md-4">
-    <div class="card">
-      <div class="content">
-        <div class="card-title">
-          hi
+      <div class="card card-background">
+        <div class="card-content">
+          <h3 class="card-title">
+            {{blog-entry.menu}}
+          </h3>
         </div>
       </div>
     </div>
-    </div>
-    <div class="col-md-4">
-    <h1>This is a second test</h1>
-    </div>
-    <div class="col-md-4">
-    <h1>This is a third test</h1>
-    </div>
+    {% endfor %}
   </div>
 </div>
+{% endif %}
+{% endfor %}

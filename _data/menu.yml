@@ -3,8 +3,18 @@
 - menu: Blog
   url: /blog/
   subitems:
-    - menu: "Article #1"
-      url: "/blog/article-1"
+    - menu: "Your Benefits. Our Mission."
+      url: "/blog/your-benefits/"
+    - menu: "Spread the Word!"
+      url: "/blog/spread-word/"
+    - menu: "Engage! Vote on Features."
+      url: "/blog/vote-features/"
+    - menu: "Computer for people, not profit."
+      url: "/blog/computer-people/"
+    - menu: "Earn money with ViDock."
+      url: "/blog/earn-money-vidock/"
+    - menu: "Eco friendly."
+      url: "/blog/eco-friendly/"
 - menu: Support
   url: /support/
 - menu: Community

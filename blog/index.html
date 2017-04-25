@@ -1,0 +1,37 @@
+---
+layout: default
+title: Blog
+abstract: This is a blog
+visualURL: /images/home/quality-teaser.jpg
+visualURL-M: /images/home/quality-teaser-m.jpg
+---
+{% for nav in site.data.menu %}
+{% if nav.menu == 'Blog' %}
+
+
+<div class="container blog-index" style="margin-top: 20px;">
+  <div class="row">
+    {% for blog-entry in nav.subitems %}
+
+    {% for page in site.pages %}
+
+    {% if page.url == blog-entry.url %}
+
+    <div class="col-md-4">
+      <div class="card card-background {% if page.visualURL %}{% elsif page.color %}card-{{page.color}}{% else %}card-primary{% endif %}" {% if page.visualURL %} style="background-image: url('{{site.baseurl}}{% if page.visualURL-M %}{{page.visualURL-M}}{% else %}{{page.visualURL}}{% endif %}')"{% endif %}>
+        <a href="{{site.baseurl}}{{blog-entry.url}}">
+          <div class="card-content">
+            <h3 class="card-title">
+              {{page.title}}
+            </h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endfor %}

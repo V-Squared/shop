@@ -1,4 +1,4 @@
-<div id="{{include.id}}" class="page-header jumbotron" {% if include.visualURL %} style="background-image: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.3)), linear-gradient(to top, transparent 85%, rgba(0, 0, 0, 0.4)), url('{{site.baseurl}}{{include.visualURL}}')" {% endif %}>
+<div id="{{include.id}}" class="page-header jumbotron" {% if include.visualURL %} style="background-image: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.3)), linear-gradient(to top, transparent 85%, rgba(0, 0, 0, 0.4)), url('{{site.baseurl}}{{include.visualURL}}')" {% else %} style="background-color: #2196F3; height: 300px;" {% endif %}>
   <img class="img-responsive mobile-jumbotron-img" src="{{site.baseurl}}{% if visualURL-M %}{{include.visualURL-M}}{% else %}{{include.visualURL}}{% endif %}" alt="">
   <div class="page-header-content">
     <div class="container" style="position: relative">
