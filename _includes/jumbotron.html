@@ -1,11 +1,13 @@
-<div class="page-header jumbotron">
-  <img class="img-responsive mobile-jumbotron-img" src="{{site.baseurl}}{{/images/home/home-page-teaser-m.jpg}}" alt="">
+<div id="{{include.id}}" class="page-header jumbotron" {% if include.visualURL %} style="background-image: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.3)), linear-gradient(to top, transparent 85%, rgba(0, 0, 0, 0.4)), url('{{site.baseurl}}{{include.visualURL}}')" {% endif %}>
+  <img class="img-responsive mobile-jumbotron-img" src="{{site.baseurl}}{% if visualURL-M %}{{include.visualURL-M}}{% else %}{{include.visualURL}}{% endif %}" alt="">
   <div class="page-header-content">
     <div class="container" style="position: relative">
       <h2 class="title">
         {{include.title}}
+        {% if include.desc %}
         <br>
         <small>{{include.desc}}</small>
+        {% endif %}
       </h2>
       <!--<div class="btn btn-just-icon btn-round btn-reddit btn-fab" id="jumbo-fab">
         {% include icons/cart-plus.html %}
@@ -13,3 +15,12 @@
     </div>
   </div>
 </div>
+{% if include.abstract %}
+<div class="feature-intro-text">
+  <div class="container">
+    <p>
+      {{include.abstract}}
+    </p>
+  </div>
+</div>
+{% endif %}

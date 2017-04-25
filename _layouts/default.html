@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body ng-controller="MainCtrl as vm">
+
+{% include navbar.html %}
+
+{% include jumbotron.html visualURL=page.visualURL visualURL-M=page.visualURL-M title=page.title abstract=page.abstract %}
+
+{{ content }}
+
+{% include footer.html %}
+
+{% include dependencies.html %}
+
+</body>
+</html>
