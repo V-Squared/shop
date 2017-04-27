@@ -9,7 +9,7 @@ visualURL-M: /images/home/quality-teaser-m.jpg
 {% if nav.menu == 'Blog' %}
 
 
-<div class="container blog-index" style="margin-top: 20px;">
+<div class="container" id="blog-index" style="margin-top: 20px;">
   <div class="row">
     {% for blog-entry in nav.subitems %}
 
@@ -23,7 +23,7 @@ visualURL-M: /images/home/quality-teaser-m.jpg
           <div class="card-content">
             {% if page.cardVisualURL %}
             <div class="card-image">
-              <img src="{{page.cardVisualURL}}">
+              <img src="{{site.baseurl}}{{page.cardVisualURL}}">
             </div>
             {% endif %}
             <h3 class="card-title">

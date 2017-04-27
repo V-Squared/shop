@@ -42,7 +42,8 @@ $baseurl: "{{site.baseurl}}";
   "components/feature-wide";
 
 @import
-  "pages/home";
+  "pages/home",
+  "pages/blog";
 
 @import
   "vendor/juxtapose";
