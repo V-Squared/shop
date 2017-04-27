@@ -2,6 +2,7 @@
   <img class="img-responsive mobile-jumbotron-img" src="{{site.baseurl}}{% if visualURL-M %}{{include.visualURL-M}}{% else %}{{include.visualURL}}{% endif %}" alt="">
   <div class="page-header-content">
     <div class="container" style="position: relative">
+      {% unless include.visualURL %}{% if page.cardVisualURL %}<img class="img-responsive" style="margin: 0 auto" src="{{site.baseurl}}{{page.cardVisualURL}}">{% endif %}{% endunless %}
       <h2 class="title">
         {{include.title}}
         {% if include.desc %}
