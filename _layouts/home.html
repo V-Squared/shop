@@ -868,6 +868,65 @@
   </div>
 </div>
 
+<div class="feature-section">
+  <div class="container">
+    <h2 class="title text-center">
+      ViDock-One & Modules
+    </h2>
+    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Modular/ViStand-Modular-Anim.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<div class="feature-section" id="buy-section">
+  <div class="container" style="text-align: center">
+    <h2 class="title">Up to <em>$70</em> discount!</h2>
+    <button class="btn btn-warning btn-round">{% include icons/cart.html %} Enter the Shop</button>
+      <p>
+        $70 discount bundle, 4 pieces left of 20.<br>
+        $50 discount bundle, limited qty 150 pcs<br>
+        Offer expires when shipping in July.
+      </p>
+  </div>
+</div>
+
+<div class="feature-section">
+  <div class="container">
+    {% for nav in site.data.menu %}
+    {% if nav.menu == 'Blog' %}
+
+    {% for blog-entry in nav.subitems %}
+
+    {% for blog-entry-page in site.pages %}
+
+    {% if blog-entry-page.url == blog-entry.url %}
+    <div class="col-sm-4">
+      <div class="card card-blog">
+        <a href="{{blog-entry-page.url}}">
+        <div class="card-image">
+          {% if blog-entry-page.cardVisualURL %}<img src="{{blog-entry-page.cardVisualURL}}">{% endif %}
+          <div class="card-title">
+            {{blog-entry-page.title}}
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="card-description">
+            Hi
+          </p>
+        </div>
+        </a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
 {% include footer.html %}
 
 {% include dependencies.html %}
