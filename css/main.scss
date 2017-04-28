@@ -39,7 +39,8 @@ $baseurl: "{{site.baseurl}}";
   "components/feature-full-width-image",
   "components/feature-modules",
   "components/feature-full",
-  "components/feature-wide";
+  "components/feature-wide",
+  "components/feature-slideshow";
 
 @import
   "pages/home",
@@ -47,3 +48,5 @@ $baseurl: "{{site.baseurl}}";
 
 @import
   "vendor/juxtapose";
+  //"vendor/slick";
+  //"vendor/slick-theme";
