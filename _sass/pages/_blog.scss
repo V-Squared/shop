@@ -4,3 +4,33 @@
     padding-right: 5px;
   }
 }
+.blog-entry {
+  position: relative;
+
+  @include media-query(500px) {
+    &:before {
+      content:"";
+      display:block;
+      padding-top: 100%;
+    }
+
+    .card-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      min-height: auto;
+      padding-top: 25px;
+
+      .card-title {
+        font-size: 12px;
+        bottom: 10px;
+      }
+
+      .card-image {
+        height: auto;
+      }
+    }
+  }
+}

@@ -17,8 +17,8 @@ visualURL-M: /images/home/quality-teaser-m.jpg
 
     {% if page.url == blog-entry.url %}
 
-    <div class="col-md-4">
-      <div class="card card-background {% if page.visualURL %}{% elsif page.color %}card-color card-{{page.color}}{% else %}card-color card-primary{% endif %}" {% if page.visualURL %} style="background-image: url('{{site.baseurl}}{% if page.visualURL-M %}{{page.visualURL-M}}{% else %}{{page.visualURL}}{% endif %}')"{% endif %}>
+    <div class="col-xs-4">
+      <div class="card card-background blog-entry {% if page.visualURL %}{% elsif page.color %}card-color card-{{page.color}}{% else %}card-color card-primary{% endif %}" {% if page.visualURL %} style="background-image: url('{{site.baseurl}}{% if page.visualURL-M %}{{page.visualURL-M}}{% else %}{{page.visualURL}}{% endif %}')"{% endif %}>
         <a href="{{site.baseurl}}{{blog-entry.url}}">
           <div class="card-content">
             {% if page.cardVisualURL %}
