@@ -5,12 +5,12 @@ abstract: This is a blog
 visualURL: /images/home/quality-teaser.jpg
 visualURL-M: /images/home/quality-teaser-m.jpg
 ---
-{% for nav in site.data.menu %}
-{% if nav.menu == 'Blog' %}
-
 
 <div class="container" id="blog-index" style="margin-top: 20px;">
   <div class="row">
+    {% for nav in site.data.menu %}
+    {% if nav.menu == 'Blog' %}
+
     {% for blog-entry in nav.subitems %}
 
     {% for page in site.pages %}
@@ -36,7 +36,8 @@ visualURL-M: /images/home/quality-teaser-m.jpg
     {% endif %}
     {% endfor %}
     {% endfor %}
+
+    {% endif %}
+    {% endfor %}
   </div>
 </div>
-{% endif %}
-{% endfor %}

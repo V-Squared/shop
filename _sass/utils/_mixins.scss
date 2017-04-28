@@ -10,3 +10,15 @@
     @content;
   }
 }
+
+@mixin typo-white {
+  h1,h2,h3,h4,h5,h6 {
+    color: rgba(255, 255, 255, 0.87);
+  }
+  strong {
+    color: rgba(255, 255, 255, 1);
+  }
+  p, span, li {
+    color: rgba(255, 255, 255, 0.54);
+  }
+}
