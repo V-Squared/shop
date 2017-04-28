@@ -894,7 +894,8 @@
 </div>
 
 <div class="feature-section">
-  <div class="container">
+  <div class="container" id="blog-index">
+    <div class="row">
     {% for nav in site.data.menu %}
     {% if nav.menu == 'Blog' %}
 
@@ -903,20 +904,19 @@
     {% for blog-entry-page in site.pages %}
 
     {% if blog-entry-page.url == blog-entry.url %}
-    <div class="col-sm-4">
-      <div class="card card-blog">
-        <a href="{{blog-entry-page.url}}">
-        <div class="card-image">
-          {% if blog-entry-page.cardVisualURL %}<img src="{{blog-entry-page.cardVisualURL}}">{% endif %}
-          <div class="card-title">
-            {{blog-entry-page.title}}
+    <div class="col-xs-4">
+      <div class="card card-background blog-entry {% if blog-entry-page.visualURL %}{% elsif blog-entry-page.color %}card-color card-{{blog-entry-page.color}}{% else %}card-color card-primary{% endif %}" {% if blog-entry-page.visualURL %} style="background-image: url('{{site.baseurl}}{% if blog-entry-page.visualURL-M %}{{blog-entry-page.visualURL-M}}{% else %}{{blog-entry-page.visualURL}}{% endif %}')"{% endif %}>
+        <a href="{{site.baseurl}}{{blog-entry.url}}">
+          <div class="card-content">
+            {% if blog-entry-page.cardVisualURL %}
+            <div class="card-image">
+              <img src="{{site.baseurl}}{{blog-entry-page.cardVisualURL}}">
+            </div>
+            {% endif %}
+            <h3 class="card-title">
+              {{blog-entry-page.title}}
+            </h3>
           </div>
-        </div>
-        <div class="card-content">
-          <p class="card-description">
-            Hi
-          </p>
-        </div>
         </a>
       </div>
     </div>
@@ -926,6 +926,7 @@
 
     {% endif %}
     {% endfor %}
+    </div>
   </div>
 </div>
 
