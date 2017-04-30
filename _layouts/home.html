@@ -869,6 +869,18 @@
 </div>
 
 <div class="feature-section">
+  <div class="container" id="special-mlg">
+    <div class="your-class slider">
+      <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-03.jpg"></div>
+      <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-01.jpg"></div>
+      <div><img class="img-responsive" src="http://placehold.it/1920x1080"></div>
+      <div><h3>5</h3></div>
+      <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-02.jpg"></div>
+    </div>
+  </div>
+</div>
+
+<div class="feature-section">
   <div class="container">
     <h2 class="title text-center">
       ViDock-One & Modules
@@ -933,6 +945,30 @@
 {% include footer.html %}
 
 {% include dependencies.html %}
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.your-class').slick({
+      slidesToShow: 1,
+      centerMode: true,
+      centerPadding: '200px'
+    });
+  })
+</script>
+
+<style>
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+  background: white;
+  margin: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+</style>
 
 </body>
 
