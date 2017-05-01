@@ -88,6 +88,11 @@
 
     .tab-pane {
       text-align: center;
+
+      h4 {
+        height: 37px;
+        line-height: 34px;
+      }
       > img {
         margin: 0 auto;
       }
