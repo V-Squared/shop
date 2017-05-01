@@ -47,6 +47,6 @@ $baseurl: "{{site.baseurl}}";
   "pages/blog";
 
 @import
-  "vendor/juxtapose";
-  //"vendor/slick",
-  //"vendor/slick-theme";
+  "vendor/juxtapose",
+  "vendor/slick",
+  "vendor/slick-theme";
