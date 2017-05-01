@@ -54,11 +54,12 @@
 }
 
 #home-jumbo {
-  height: 800px !important;
+  height: 800px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,0.3)),linear-gradient(to top, rgba(0, 0, 0, 0) 85%, rgba(0,0,0,0.4)), url($baseurl + "/images/home/home-page-teaser.jpg");
 
   > .page-header-content {
     top: 180px;
+    bottom: auto;
     transition: all 0.25s ease-in-out;
 
     @include media-query($on-mobile) {

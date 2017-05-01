@@ -75,7 +75,7 @@
                 <div class="tab-content">
                   <div class="tab-pane active" id="desktop">
                     <h4>Desktop-SFF → Modular-in-One PC
-                    <button class="btn btn-primary btn-simple btn-small" data-trigger="focus" data-toggle="popover" data-container="body" data-content="The Desktop-SFF (Small Form Factor) case shown is the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01</a>, a 14L case with the dimensions: 376 (H) x 351 (W) x 107 (D) mm. Your case will be compatible if its depth is < 120mm. If you have a bigger case, you can make your computer compatible by changing its case to a SFF case, such as the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01.</a>" data-html="true">More</button></h4>
+                    <button class="btn btn-primary btn-simple btn-small" data-placement="left" data-trigger="focus" data-toggle="popover" data-container="body" data-content="The Desktop-SFF (Small Form Factor) case shown is the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01</a>, a 14L case with the dimensions: 376 (H) x 351 (W) x 107 (D) mm. Your case will be compatible if its depth is < 120mm. If you have a bigger case, you can make your computer compatible by changing its case to a SFF case, such as the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01.</a>" data-html="true">More</button></h4>
                     <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/Desktop-Before.jpg'"
@@ -98,7 +98,7 @@
                   </div>
                   <div class="tab-pane" id="notebook">
                     <h4>Laptop → Modular-in-One Docking
-                    <button class="btn btn-primary btn-simple btn-small" data-trigger="focus" data-toggle="popover" data-container="body" data-content="You have two more placement options:" data-html="true">More</button></h4>
+                    <button class="btn btn-primary btn-simple btn-small" data-placement="left" data-trigger="focus" data-toggle="popover" data-container="body" data-content="You have two more placement options:" data-html="true">More</button></h4>
                     <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/Laptop-Before.jpg'"
@@ -121,7 +121,7 @@
                   </div>
                   <div class="tab-pane" id="gpu">
                     <h4>Powerful Modular-in-One Docking Station
-                    <button class="btn btn-primary btn-simple btn-small" data-trigger="focus" data-toggle="popover" data-container="body" data-content="There are lots of powerful docking stations / external GPU (eGPU) solutions available for laptop and tablet. Shown: ViDock. Another example is the <a href='https://www.razerzone.com/gaming-systems/razer-blade-stealth#work-play' target='_blank'>Razer-Core</a> , the <a href='http://www.sonnettech.com/product/thunderbolt/index.html' target='_blank'>Sonnet Echo family</a> and many others. Any box will fit ViDock-One's bracket as long as one side is < 120 mm." data-html="true">More</button></h4>
+                    <button class="btn btn-primary btn-simple btn-small" data-placement="left" data-trigger="focus" data-toggle="popover" data-container="body" data-content="There are lots of powerful docking stations / external GPU (eGPU) solutions available for laptop and tablet. Shown: ViDock. Another example is the <a href='https://www.razerzone.com/gaming-systems/razer-blade-stealth#work-play' target='_blank'>Razer-Core</a> , the <a href='http://www.sonnettech.com/product/thunderbolt/index.html' target='_blank'>Sonnet Echo family</a> and many others. Any box will fit ViDock-One's bracket as long as one side is < 120 mm." data-html="true">More</button></h4>
                     <div class="embed-responsive embed-responsive-16by9">
                     <juxtapose class="embed-responsive-item"
                                before-image-url="'{{site.baseurl}}/images/home/eGPU-Before.jpg'"
@@ -850,7 +850,7 @@
             <h3 class="info-title">
               Materials
             </h3>
-            <p>ViDock-One contains no short-lived materials, such as rubber, common plastic, glue, or paint. Instead, we use aircraft grade aluminum, stainless steel, durable hardwood, screws, and ripstop nylon.</p>
+            <p>ViDock-One contains no short-lived materials, such as rubber, common plastic, glue, or paint. Instead, we use anodized aircraft grade aluminum, stainless steel, durable hardwood, and screws.</p>
             <p uib-collapse="!$group.isOpen">This is how we can guarantee 50 years of service life, backed up by a 10 years no-nonsense warranty. Use ViDock-One until you have no more use for it or you are ready to pass it on. Trust that it will not fail under normal use in your lifetime.</p>
             <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
           </div>
@@ -862,7 +862,7 @@
               Handmade
             </h3>
             <p>For us quality comes first. Some work still benefits from the human touch.</p>
-            <p uib-collapse="!$group.isOpen">When working with natural materials such as hardwood or tweaking edge polishing of aluminum still no automated process can beat the quality of handmade!</p>
+            <p uib-collapse="!$group.isOpen">Still no automated process can beat the quality of handmade when applying oil finish to hardwood or when polishing the edge of CNC-cut aluminum. These are just two examples.</p>
             <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
           </div>
         </div>
@@ -871,15 +871,13 @@
   </div>
 </div>
 
-<div class="feature-section">
-  <div class="container" id="special-mlg">
-    <div class="your-class slider">
-      <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-03.jpg"></div>
-      <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-01.jpg"></div>
-      <div><img class="img-responsive" src="http://placehold.it/1920x1080"></div>
-      <div><h3>5</h3></div>
-      <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-02.jpg"></div>
-    </div>
+<div class="feature-section feature-slideshow">
+  <div class="your-class slider">
+    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-03.jpg"></div>
+    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-01.jpg"></div>
+    <div><img class="img-responsive" src="http://placehold.it/1920x1080"></div>
+    <div><h3>5</h3></div>
+    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-02.jpg"></div>
   </div>
 </div>
 
@@ -889,9 +887,10 @@
       Modular
     </h2>
     <div style="max-width: 640px; margin: 0 auto;">
-    <video class="video-js vjs-default-skin" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+    <video class="video-js vjs-default-skin" controls preload="auto" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Modular/ViDock-Modular-Poster.jpg" data-setup='{ "aspectRatio":"16:9" }'>
       <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Modular/ViStand-Modular-Anim.mp4" type="video/mp4">
     </video>
+    <p class="text-center" style="padding-top: 10px;color: rgba(0, 0, 0, 0.54)">ViDock-One: Your friendly servant!</p>
     </div>
   </div>
 </div>
@@ -909,7 +908,10 @@
 </div>
 
 <div class="feature-section">
-  <div class="container" id="blog-index">
+  <div class="container text-center" id="blog-index">
+    <h1 class="title text-center">
+      Engage!
+    </h1>
     <div class="row">
     {% for nav in site.data.menu %}
     {% if nav.menu == 'Blog' %}
@@ -942,6 +944,7 @@
     {% endif %}
     {% endfor %}
     </div>
+    <a href="{{site.baseurl}}/blog" class="btn btn-lg btn-primary btn-round text-center">Enter the Blog</a>
   </div>
 </div>
 
@@ -954,24 +957,20 @@
     $('.your-class').slick({
       slidesToShow: 1,
       centerMode: true,
-      centerPadding: '200px'
+      centerPadding: '200px',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerMode: true,
+            centerPadding: '25px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   })
 </script>
-
-<style>
-.slick-slide {
-  text-align: center;
-  color: #419be0;
-  background: white;
-  margin: 10px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-</style>
 
 </body>
 

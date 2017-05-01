@@ -1,3 +1,55 @@
-.your-class {
-  background: transparent;
+.feature-slideshow {
+  padding: 0;
+}
+
+.slider {
+  background: #000;
+
+  .slick-slide {
+    margin: 10px 5px;
+    text-align: center;
+
+    @include media-query($on-mobile) {
+      margin: 3px 1.5px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+
+    @include media-query($on-mobile) {
+      //width: 15px;
+      //height: 15px;
+
+      &:before {
+        font-size: 20px !important;
+      }
+
+      &.slick-prev {
+        padding-right: 30px;
+        left: 0px !important;
+      }
+      &.slick-next {
+        padding-left: 30px;
+        right: 0px !important;
+      }
+    }
+
+    &:before {
+      font-size: 50px;
+      color: black;
+    }
+
+    &.slick-prev {
+      left: 30px;
+    }
+    &.slick-next {
+      right: 30px;
+    }
+  }
 }
