@@ -89,9 +89,15 @@
     .tab-pane {
       text-align: center;
 
+      // TODO: Clean This Up
+      // Hack: Using magic numbers for more button to display properly
       h4 {
         height: 37px;
         line-height: 34px;
+
+        @include media-query(365px) {
+          height: auto;
+        }
       }
       > img {
         margin: 0 auto;
