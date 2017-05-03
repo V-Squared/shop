@@ -6,7 +6,7 @@
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-position: center center;
-  height: 500px;
+  height: 480px;
 
   @include media-query($on-mobile) {
     box-shadow: none !important;
@@ -39,7 +39,6 @@
 
 .jumbo-primary {
   background-color: #2196F3;
-  height: 400px;
 
   > .page-header-content {
 

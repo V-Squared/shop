@@ -1,29 +1,8 @@
-.card-background {
-  background-position: center center;
-  background-size: cover;
-  text-align: center;
-
-  &:after {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: block;
-    left: 0;
-    top: 0;
-    content: "";
-    background-color: rgba(0,0,0,.25);
-    border-radius: 6px;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
 .card {
   margin-bottom: 10px;
 
   .card-content {
     padding: 20px;
-
     position: relative;
     z-index: 2;
     min-height: 280px;
@@ -51,6 +30,33 @@
 
   &:hover:after {
     background-color: rgba(0,0,0,.25);
+  }
+}
+
+.card-background {
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+
+  &:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0,0,0,.25);
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.card-stretch {
+  .card-content {
+    min-height: auto;
+    max-width: auto;
   }
 }
 
