@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="feature-section feature-modules">
+<div class="feature-section tab-select feature-modules">
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-6">
@@ -33,10 +33,10 @@
               <span class="visible-xs visible-sm">Turn any form factor to All-in-One</span>
             </h3>
             <div class="card-nav-tabs tab-material">
-              <div class="header header-primary header-full header-material header-thin">
+              <div class="header header-primary header-full header-material header-thin first-tab">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
-                    <ul class="nav nav-tabs"  data-tabs="tabs">
+                    <ul class="nav nav-tabs" data-tabs="tabs">
                       <li class="active">
                         <a href="#desktop" data-toggle="tab">
                           {% include icons/desktop-tower.html %}
@@ -144,7 +144,7 @@
               How ViDock-One does it
             </h3>
             <div class="card-nav-tabs tab-material">
-              <div class="header header-primary header-full header-material header-thin">
+              <div class="header header-primary header-full header-material header-thin second-tab">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
                     <ul class="nav nav-tabs"  data-tabs="tabs">
@@ -953,6 +953,16 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
+    $(".tab-select .first-tab li a").click(function() {
+      //alert($(this).parent().index());
+      $(".second-tab li").eq($(this).parent().index()).children().tab("show");
+    });
+
+    $(".tab-select .second-tab li a").click(function() {
+      //alert($(this).parent().index());
+      $(".first-tab li").eq($(this).parent().index()).children().tab("show");
+    });
+
     $('.your-class').slick({
       slidesToShow: 1,
       centerMode: true,
