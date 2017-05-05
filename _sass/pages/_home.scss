@@ -69,10 +69,15 @@
   }
 
   #buy-call-to-action {
-    position: absolute; top: 40%; transform: translateY(-50%);width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
   }
 
   > .full-width-content {
-    position: absolute; bottom: 100px;width: 100%;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
   }
 }
