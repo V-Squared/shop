@@ -50,6 +50,7 @@
   position: relative;
   height: 700px;
   text-align: center;
+  padding: 0;
 
   background-image: url($baseurl + "/images/home/shop-now.jpg");
   background-position: top center;
@@ -57,11 +58,6 @@
   background-repeat: no-repeat;
 
   @include typo-white;
-
-  > .container {
-    position: relative;
-    z-index: 3;
-  }
 
   > #make-it-so {
     position: absolute;
@@ -72,7 +68,11 @@
     color: rgba(255, 255, 255, 0.54);
   }
 
+  #buy-call-to-action {
+    position: absolute; top: 40%; transform: translateY(-50%);width: 100%;
+  }
+
   > .full-width-content {
-    position: absolute; top: 50%; transform: translateY(-50%);width: 100%;
+    position: absolute; bottom: 100px;width: 100%;
   }
 }
