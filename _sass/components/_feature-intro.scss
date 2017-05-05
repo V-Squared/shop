@@ -19,7 +19,7 @@
 
   &.intro-primary {
     @include media-query($on-mobile) {
-      background-color: $brand-secondary;
+      background-color: $brand-color;
       color: rgba(255, 255, 255, 0.87);
     }
   }
