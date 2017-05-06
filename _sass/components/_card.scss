@@ -78,6 +78,10 @@
     > .price {
       color: $brand-color;
       font-size: 2em;
+
+      &.price-white {
+        color: #FFF;
+      }
     }
   }
 }
@@ -86,6 +90,6 @@
 .card-purple {background: linear-gradient(60deg, #AB47BC, #7B1FA2);}
 .card-cyan {background: linear-gradient(60deg, #26C6DA, #0097A7); @include typo-white;}
 .card-green {background: linear-gradient(60deg, #66BB6A, #388E3C);}
-.card-amber {background: linear-gradient(60deg, #FFCA28, #FFA000);}
+.card-orange {background: linear-gradient(60deg, #FFA726, #F57C00); @include typo-white;}
 .card-red {background: linear-gradient(60deg, #FF7043, #E64A19);}
 .card-pink {background: linear-gradient(60deg, #EC407A, #C2185B);}
