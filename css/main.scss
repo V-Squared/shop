@@ -26,6 +26,7 @@ $baseurl: "{{site.baseurl}}";
   "layout/footer";
 
 @import
+  "components/alert",
   "components/button",
   "components/callout",
   "components/card",

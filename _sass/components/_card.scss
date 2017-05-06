@@ -62,6 +62,26 @@
   }
 }
 
+.card-feature {
+  .card-description {
+    padding-right: 5px;
+  }
+
+  .card-item {
+    padding-left: 5px;
+    text-align: center;
+  }
+
+  .price-container {
+    margin: 10px 0;
+
+    > .price {
+      color: $brand-color;
+      font-size: 2em;
+    }
+  }
+}
+
 .card-primary {background: linear-gradient(60deg, $brand-400, $brand-700);}
 .card-purple {background: linear-gradient(60deg, #AB47BC, #7B1FA2);}
 .card-cyan {background: linear-gradient(60deg, #26C6DA, #0097A7); @include typo-white;}
