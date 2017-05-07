@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Shop
-abstract: Checkout this crazy discounts!
 visualURL: /images/shop/shop-teaser.jpg
 visualURL-M: /images/shop/shop-teaser-M.jpg
 warning:
   color: danger
-  content: Testing Mode, do not order yet!
+  content: Developer site! Click "?" for more.
 ---
 
 <div class="feature-section">
@@ -57,36 +56,164 @@ warning:
   </div>
 </div>
 
-<div class="feature-section" style="background-color: #FFF">
+<div class="feature-section" style="background-color: #FFF; padding: 120px 0;" v2-accordian>
   <div class="container">
     <h1 class="title text-center">Safe Shopping</h1>
     <div class="row text-center">
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6" v2-accordian-group>
         <div class="info">
           <img class="img-responsive" src="{{site.baseurl}}/images/products/payments.png">
           <h3 class="info-title">Safe & Secure Payment</h3>
-          <p>When you check out, your order is safely processed through Shopify and PayPal. If you have no PayPal account, you can enter your credit card information and then pay. <a href="#plabo">Read More ...</a></p>
+          <p>Keeping your financial information secure is absolutely essential when buying online. When you check out, your order is safely processed through <a href="https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security">Paypal</a> and <a href="https://www.shopify.com/pci-compliant">Shopify</a>. If you have no PayPal account, you can enter your credit card information and pay.</p>
+          <p uib-collapse="!$group.isOpen">Both services are very vigilant about their safety protocols, such as being compliant to <a href="https://www.pcisecuritystandards.org/pci_security/">PCI-DSS-Safety</a> (Level 1). For more information check out the pages on online security: <a href="https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security">PayPal-Safety</a> and <a href="https://www.shopify.com/pci-compliant">Shopify-Safety</a>.</p>
+          <button class="btn btn-primary btn-simple btn-readmore" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6" v2-accordian-group>
         <div class="info">
           <img class="img-responsive center-block img-circle img-raised" src="{{site.baseurl}}/images/products/support.jpg">
           <h3 class="info-title">Competent Support</h3>
-          <p>All our support staff is in-house and part of our development team. You post your support request on our Facebook page or our ticket system and we typically get back to you in under two working days. <a href="#plabo">Read More ...</a></p>
+          <p>All our support staff are in-house and part of our development team. You post your support request on our Facebook page or our ticket system and we typically get back to you in under two working days.</p>
+          <p uib-collapse="!$group.isOpen">Our customers voted against using a service center that offers faster responses, but with the down side of using agents who do not know the product.</p>
+          <button class="btn btn-primary btn-simple btn-readmore" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6">
         <div class="info">
           <img class="img-responsive" src="{{site.baseurl}}/images/products/shipping-map.jpg">
           <h3 class="info-title">Local</h3>
-          <p>We have local warehouses in Las Vegas, Hamburg and Guangzhou. This means for USA and European customers the product is already imported, all customs and import tax paid. Low shipping costs too.</p>
+          <p>We have local warehouses in Las Vegas, Hamburg and Guangzhou. This means for USA and European customers the product is already imported, all customs and import tax paid. Low shipping costs, too.</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6">
         <div class="info">
           <img class="img-responsive center-block" src="{{site.baseurl}}/images/products/warranty-seal.png">
           <h3 class="info-title">Warranty & Returns</h3>
-          <p>We guaranty our products to last 50 years, backed up by a 10 year warranty. In the rare event that you must repair or return the product we make it straight forward. <a href="#plabo">Read More ...</a></p>
+          <p>We guarantee our products to last 50 years, backed up by a 10 year warranty. In the rare event that you must repair or return the product we make the process straight forward.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="feature-section" style="background-color: #EBEFF2; padding: 120px 0;">
+  <div class="container">
+    <h1 class="title">Community & Money</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="info">
+          <h3 class="info-title">Buying ViDock funds V²</h3>
+          <p>Saving your money and our planet's resources when upgrading your computer is our mission at the V² Movement. All our work is funded through the ViDock / V² community by buying ViDock — or by inspiring people to buy ViDock. The development of ViDock-One was completely funded by ViDock-eGPU sales and donations. ViDock-One sales will fund the development of an open source Modular-in-One™ standard. That is an All-in-One form factor that is made for people and manufacturers, not for shareholder value. </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info">
+          <h3 class="info-title">Community Distribution</h3>
+          <p>Make money with ViDock & support the cause! We have a variety of discount programs, suitable for private persons and businesses alike. They are as easy as getting a 10% discount on any consecutive order or earning a 10% discount by getting your friend to buy a ViDock.<br><br> We even make it easy to open your own ViDock online store. When getting closer to opening the shop we will have an article ready on how to → Make money with ViDock.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info">
+          <h3 class="info-title">Volume Pricing</h3>
+          <p>For retailer, schools, companies, hospitals, hotels, fraternities, …</p>
+          <div class="table-responsive table-raised">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>QTY</th>
+                  <th>Dim [inch]</th>
+                  <th>Weight</th>
+                  <th>Discount</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5 pcs</td>
+                  <td>13x13x10</td>
+                  <td>20 Ibs.</td>
+                  <td>15%</td>
+                  <td>$633</td>
+                </tr>
+                <tr>
+                  <td>10 pcs</td>
+                  <td>13x13x19</td>
+                  <td>40 Ibs.</td>
+                  <td>18%</td>
+                  <td>$1,222</td>
+                </tr>
+                <tr>
+                  <td>15 pcs</td>
+                  <td>13x13x27</td>
+                  <td>60 Ibs.</td>
+                  <td>20%</td>
+                  <td>$1,788</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="feature-section" style="background: #FFF; padding: 120px 0;">
+  <div class="container">
+    <h1 class="title text-center">Modules in Community Development</h1>
+    <p class="text-center">ViDock-One not only comes with four modules, additional four modules are on the way:</p>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-plain card-product no-shadow">
+          <div class="card-image">
+            <a href="">
+              <img class="img-responsive center-block" src="{{site.baseurl}}/images/products/vidock-lift/vidock-lift.png">
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="">ViDock-Lift</a></h3>
+            <p class="description">Bring ergonomic efficiency to your workspace, elevating your view of your screen while at the same time clearing your desk by securing your computer cables and dongles under the notebook platform. <button data-toggle="popover" title="ViDock-Lift" data-content="ViDock-Lift comes with numerous configuration options, such as configurable holding pins that stay clear of any ports or buttons you may have in the front of your laptop. When using a full sized keyboard you can park it under your laptop when not needed.<br><br>Made from precision CNC cut aircraft grade aluminum in combination with beech hardwood inserts with vegetable oil hand rubbed finish. ViDock-Lift works well as a stand alone or in tandem with ViDock-One." data-html="true" data-container="body" data-placement="top" class="btn btn-primary btn-simple btn-readmore btn-inline">Read More</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-plain card-product no-shadow">
+          <div class="card-image">
+            <a href="">
+              <img class="img-responsive center-block" src="{{site.baseurl}}/images/products/catch-all/catch-all.jpg">
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="">Catch-all</a></h3>
+            <p class="description">A distinctive home for all your desk items. The cup is precision CNC cut from beech hardwood and hand finished with vegetable oil. It holds large items like pencils, phone, mouse, etc. <button data-toggle="popover" title="Catch-all" data-content="To easily access your small items, the Catchall also features small pockets for eraser, paper clips, USB sticks, SD-Cards, and the like. The cup can be placed on your desk for easy access while working, or out of sight behind your display by hooking it to the cup arm, which in turn is slotted into ViDock-One.<br><br>The cup arm comes with its own array of slots and hooks to hold all your tools, such as scissors, USB sticks, screw drivers, key chains, card readers, etc … As always, the arm is made of brushed aircraft grade aluminum and the cup is solid beech hardwood with vegetable oil hand rubbed finish." data-html="true" data-container="body" data-placement="top" class="btn btn-primary btn-simple btn-readmore btn-inline">Read More</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-plain card-product no-shadow">
+          <div class="card-image">
+            <a href="">
+              <img class="img-responsive center-block" src="{{site.baseurl}}/images/products/speaker-20/speaker-20.jpg">
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="">Speaker 2.0</a></h3>
+            <p class="description">If you are looking for a marked improvement in sound quality over built-in notebook or display speakers, yet you do not want to sacrifice simplicity, elegance and portability, then look no further. <button data-toggle="popover" title="Speaker 2.0" data-content="When it comes to sound, size matters! Its 2'/50mm driver size simply dwarfs the integrated speakers.<br><br>
+            Solid beech hardwood, CNC milled and hand finished with a lush oil sealer. You can place them on your desk or mount them under or behind your display using ViDock.Slots. The included hangers are CNC crafted from aircraft grade aluminum." data-html="true" data-container="body" data-placement="top" class="btn btn-primary btn-simple btn-readmore btn-inline">Read More</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-plain card-product no-shadow">
+          <div class="card-image">
+            <a href="">
+              <img class="img-responsive center-block" src="{{site.baseurl}}/images/products/vidock-lift/vidock-lift.png">
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="">Speaker 2.1</a></h3>
+            <p class="description">All the goodness of the Speaker 2.0, with the added oomph of a subwoofer. This speaker enclosure harnesses the superior acoustic properties of solid beech hardwood. <button data-toggle="popover" title="Speaker 2.1" data-content="The speaker itself is mounted to ViDock-One using acoustic dampeners, avoiding the transfer of unwanted vibrations from your speaker to your computer or table. The solid mounting also makes it easy to move the entire assembly. As you have come to expect from us by now, all of ViDock-One's bay functions remain operational." data-placement="top" data-html="true" data-container="body" class="btn btn-primary btn-simple btn-readmore btn-inline">Read More</button></p>
+          </div>
         </div>
       </div>
     </div>
