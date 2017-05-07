@@ -15,6 +15,13 @@
       </div>-->
     </div>
   </div>
+  {% if page.warning %}
+  <div class="alert alert-{{page.warning.color}} alert-jumbo">
+    <div class="container">
+      <strong>RED ALERT:</strong> {{page.warning.content}}
+    </div>
+  </div>
+  {% endif %}
 </div>
 {% if include.abstract %}
 <div class="feature-intro-text">

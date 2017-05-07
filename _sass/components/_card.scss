@@ -63,8 +63,30 @@
 }
 
 .card-feature {
+  &.card-feature-special {
+    position: relative;
+    //border: 4px solid $brand-accent;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: 4px solid $brand-accent;
+      border-radius: 3px;
+    }
+  }
+
   .card-description {
     padding-right: 5px;
+
+    p {
+      color: rgba(0, 0, 0, 0.87);
+    }
   }
 
   .card-item {
