@@ -12,7 +12,7 @@ warning:
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <div class="card card-feature card-stretch">
+        <div class="card card-feature card-stretch" style="max-width: 640px; margin: 0 auto">
           <div class="card-content">
             <div class="row">
               <div class="col-md-7 card-description">
@@ -57,6 +57,121 @@ warning:
     </div>
     </div>
   </div>
+</div>
+
+<div class="feature-section">
+  <div class="container">
+        <div class="card" style="max-width: 640px; margin: 0 auto">
+          <div class="content">
+            <h3 class="title text-center">
+              <span class="hidden-xs hidden-sm">ViDock-One works with any Form Factor</span>
+              <span class="visible-xs visible-sm">Turn any form factor to All-in-One</span>
+            </h3>
+            <div class="card-nav-tabs tab-material">
+              <div class="header header-primary header-full header-material header-thin first-tab">
+                <div class="nav-tabs-navigation">
+                  <div class="nav-tabs-wrapper">
+                    <ul class="nav nav-tabs" data-tabs="tabs">
+                      <li class="active">
+                        <a href="#desktop" data-toggle="tab">
+                          {% include icons/desktop-tower.html %}
+                          <span>Desktop</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#mini-pc" data-toggle="tab">
+                          {% include icons/mini-2-opt.html %}
+                          <span>Mini-PC</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#notebook" data-toggle="tab">
+                          {% include icons/laptop-windows.html %}
+                          <span>Laptop</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#tablet" data-toggle="tab">
+                          {% include icons/tablet-android.html %}
+                          <span>Tablet</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#gpu" data-toggle="tab">
+                          {% include icons/gpu-card.html %}
+                          <span>eGPU/Dock</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="desktop">
+                    <h4>Desktop-SFF → Modular-in-One PC
+                    <button class="btn btn-primary btn-simple btn-small" data-placement="bottom" data-trigger="focus" data-toggle="popover" data-container="body" data-title="Compatibiliy" data-content="The Desktop-SFF (Small Form Factor) case shown is the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01</a>, a 14L case with the dimensions: 376 (H) x 351 (W) x 107 (D) mm. Your case will be compatible if its depth is < 120mm. If you have a bigger case, you can make your computer compatible by changing its case to a SFF case, such as the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01.</a><br><img class='img-responsive' style='max-width: 170px; margin: 0 auto' src='http://www.silverstonetek.com/images/products/ftz01/ftz01b-34left.jpg'>" data-html="true">More</button></h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <juxtapose class="embed-responsive-item"
+                               before-image-url="'{{site.baseurl}}/images/home/Desktop-Before.jpg'"
+                               before-image-label="'Before'"
+                               after-image-url="'{{site.baseurl}}/images/home/Desktop-After.jpg'"
+                               after-image-label="'After'">
+                    </juxtapose>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="mini-pc">
+                    <h4>Mini → Modular-in-One PC</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <juxtapose class="embed-responsive-item"
+                                 before-image-url="'{{site.baseurl}}/images/home/Mini-Before.jpg'"
+                                 before-image-label="'Before'"
+                                 after-image-url="'{{site.baseurl}}/images/home/Mini-After.jpg'"
+                                 after-image-label="'After'">
+                      </juxtapose>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="notebook">
+                    <h4>Laptop → Modular-in-One Docking
+                    <button class="btn btn-primary btn-simple btn-small" data-placement="bottom" data-trigger="focus" data-toggle="popover" data-container="body" data-content="You have two more placement options:<img class='img-responsive' src='{{site.baseurl}}/images/home/laptop.jpg'><img class='img-responsive' src='{{site.baseurl}}/images/home/laptop-lift.jpg'>" data-html="true">More</button></h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <juxtapose class="embed-responsive-item"
+                               before-image-url="'{{site.baseurl}}/images/home/Laptop-Before.jpg'"
+                               before-image-label="'Before'"
+                               after-image-url="'{{site.baseurl}}/images/home/Laptop-After.jpg'"
+                               after-image-label="'After'">
+                    </juxtapose>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="tablet">
+                    <h4>Tablet → Modular-in-One Docking</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <juxtapose class="embed-responsive-item"
+                               before-image-url="'{{site.baseurl}}/images/home/Tablet-Before.jpg'"
+                               before-image-label="'Before'"
+                               after-image-url="'{{site.baseurl}}/images/home/Tablet-After.jpg'"
+                               after-image-label="'After'">
+                    </juxtapose>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="gpu">
+                    <h4>Powerful Modular-in-One Docking Station
+                    <button class="btn btn-primary btn-simple btn-small" data-placement="bottom" data-trigger="focus" data-toggle="popover" data-container="body" data-content="There are lots of powerful docking stations / external GPU (eGPU) solutions available for laptop and tablet. Shown: ViDock. Another example is the <a href='https://www.razerzone.com/gaming-systems/razer-blade-stealth#work-play' target='_blank'>Razer-Core</a> , the <a href='http://www.sonnettech.com/product/thunderbolt/index.html' target='_blank'>Sonnet Echo family</a> and many others. Any box will fit ViDock-One's bracket as long as one side is < 120 mm.<img class='img-responsive' style='margin: 0 auto' src='{{site.baseurl}}/images/home/razer-core.png'>" data-html="true">More</button></h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <juxtapose class="embed-responsive-item"
+                               before-image-url="'{{site.baseurl}}/images/home/eGPU-Before.jpg'"
+                               before-image-label="'Before'"
+                               after-image-url="'{{site.baseurl}}/images/home/eGPU-After.jpg'"
+                               after-image-label="'After'">
+                    </juxtapose>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 
 <div class="feature-section" style="background-color: #FFF; padding: 120px 0;" v2-accordian>
