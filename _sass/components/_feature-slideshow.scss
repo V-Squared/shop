@@ -4,26 +4,6 @@
 
 .slider {
   background: transparent;
-}
-
-.slider-full {
-  .slick-slide {
-    text-align: center;
-
-    @include media-query($on-mobile) {
-      margin: 3px 1.5px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-}
-
-.slider-full-center {
-  background: #000;
 
   .slick-slide {
     margin: 10px 5px;
@@ -35,6 +15,8 @@
 
     img {
       max-width: 100%;
+      height: auto;
+      margin: 0 auto;
     }
   }
 
@@ -73,4 +55,14 @@
       right: 30px;
     }
   }
+}
+
+.slider-full {
+  .slick-slide {
+    margin: 0;
+  }
+}
+
+.slider-full-center {
+  background: #000;
 }

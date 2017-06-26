@@ -3,19 +3,14 @@
 
 {% include head.html %}
 
-<body ng-controller="MainCtrl as vm">
+<body ng-controller="MainCtrl as vm" style="padding-top: 40px">
 
 {% include navbar.html %}
 
 <div id="home-jumbo" class="page-header jumbotron">
   <div class="jumbo-slider slider slider-full">
-    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.001.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.002.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.003.jpg"></div>
-    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.004.jpg"></div>
-    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.005.jpg"></div>
-    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.006.jpg"></div>
-    <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.007.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.008.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.009.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/jumbo-slide/images.010.jpg"></div>
@@ -28,22 +23,52 @@
   {{ content }}
 </div>-->
 
-<div class="feature-intro-text intro-primary">
+<div class="feature-intro-text intro-primary" style="padding: 50px 0;">
   <div class="container">
+  <h3>The World's first 5-in-One Desk Organizer</h3>
     <p>
       A stylish, clean, and well organized desk is a joy to use and simply feels great. Wait — what? Your desk doesn't look like this? It's overrun by cables and computer gear? ViDock-One reclaims your desk! It docks all your computer gear and hides it behind your display, effectively turning any computer form factor into an All-in-One.
     </p>
   </div>
 </div>
 
-<div class="feature-section tab-select feature-modules">
+<div class="feature-section tab-select feature-modules"  style="padding: 140px 0;">
   <div class="container text-center">
         <div class="card" style="max-width: 640px; margin: 0 auto">
           <div class="content">
             <h3 class="title text-center">
-              How ViDock-One does it
+              How it Works
             </h3>
-            <div class="card-nav-tabs tab-material">
+              <div class="content">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="how-desktop">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/Desktop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-Desktop-Anim.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="tab-pane" id="how-mini">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/Mini-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="tab-pane" id="how-laptop">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/Laptop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/ViStand-Laptop-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="tab-pane" id="how-tablet">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/Tablet-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="tab-pane" id="how-gpu">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/eGPU-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/ViStand-eGPU-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="card-nav-tabs tab-material">
               <div class="header header-primary header-full header-material header-thin second-tab">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
@@ -82,40 +107,6 @@
                   </div>
                 </div>
               </div>
-              <div class="content">
-                <div class="tab-content">
-                  <div class="tab-pane active" id="how-desktop">
-                    <h4>Desktop-SFF → Modular-in-One PC</h4>
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/Desktop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-Desktop-Anim.mp4" type="video/mp4">
-                      </video>
-                  </div>
-                  <div class="tab-pane" id="how-mini">
-                    <h4>Mini → Modular-in-One PC</h4>
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/Mini-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-laptop">
-                    <h4>Laptop → Modular-in-One Docking</h4>
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/Laptop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/ViStand-Laptop-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-tablet">
-                    <h4>Tablet → Modular-in-One Docking</h4>
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/Tablet-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-gpu">
-                    <h4>Powerful Modular-in-One Docking Station</h4>
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/eGPU-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/ViStand-eGPU-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -129,6 +120,84 @@
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-03.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-01.jpg"></div>
     <div><img class="img-responsive" src="{{site.baseurl}}/images/home/Style-Mockup-02.jpg"></div>
+  </div>
+</div>
+
+<div class="feature-section feature-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img class="img-responsive hidden-xs" style="max-width: 300px; margin: 0 auto" src="{{site.baseurl}}/images/home/apply-oil-finish.jpg" alt="">
+        <img class="img-responsive visible-xs" style="margin: 0 auto" src="{{site.baseurl}}/images/home/apply-oil-finish-m.jpg" alt="">
+      </div>
+      <div class="col-sm-6" v2-accordian>
+        <h2 class="title">
+          Solid
+        </h2>
+        <div class="info info-horizontal" v2-accordian-group>
+          {% include icons/cart.html %}
+          <div class="description">
+            <h3 class="info-title">
+              Quality
+            </h3>
+            <p>
+              We are obsessed with quality and reliability in everything we do, from the UI of our home page to the tiniest details of our products. ViDock-One is meticulously designed, expertly engineered and extensively tested.
+            </p>
+            <p uib-collapse="!$group.isOpen">Our design team packs over 150 years of experience. ViDock-One is made by best in class production processes. We even design the product packaging in parallel with the product to survive drops from 1 meter (3 feet) onto concrete, ensuring that your ViDock arrives without a dent while minimizing packaging material.</p>
+            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
+          </div>
+        </div>
+        <div class="info info-horizontal" v2-accordian-group>
+          {% include icons/cart-plus.html %}
+          <div class="description">
+            <h3 class="info-title">
+              Materials
+            </h3>
+            <p>ViDock-One contains no short-lived materials, such as rubber, common plastic, glue, or paint. Instead, we use anodized aircraft grade aluminum, stainless steel, durable hardwood, and screws.</p>
+            <p uib-collapse="!$group.isOpen">This is how we can guarantee 50 years of service life, backed up by a 10 years no-nonsense warranty. Use ViDock-One until you have no more use for it or you are ready to pass it on. Trust that it will not fail under normal use in your lifetime.</p>
+            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
+          </div>
+        </div>
+        <div class="info info-horizontal" v2-accordian-group>
+          {% include icons/angled-keyboard.html %}
+          <div class="description">
+            <h3 class="info-title">
+              Mature
+            </h3>
+            <p>It took us 11 generations from inception to mass production of ViDock-One . The record number of improvements between generations was 88.</p>
+            <p uib-collapse="!$group.isOpen">We not only built many prototypes, but lived and worked with them for years. We actually developed ViDock-One on ViDock-One Modular-in-One computers. We proudly believe in → Eating your own dogfood.</p>
+            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
+          </div>
+        </div>
+        <div class="info info-horizontal" v2-accordian-group>
+          {% include icons/angled-keyboard.html %}
+          <div class="description">
+            <h3 class="info-title">
+              Handmade
+            </h3>
+            <p>For us quality comes first. Although handmade is more expensive, some work still benefits from the human touch.</p>
+            <p uib-collapse="!$group.isOpen">Still no automated process can beat the quality of handmade when applying oil finish to hardwood or when polishing the edge of CNC-cut aluminum. These are just two examples.</p>
+            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="feature-section" id="buy-section">
+  <h2 id="make-it-so">Make it so!<br><small>Your clean desk is just one click away:</small></h3>
+  <div id="buy-call-to-action">
+    <a href="{{site.baseurl}}/shop" class="btn btn-lg btn-warning btn-accent btn-round" target="_blank">{% include icons/cart.html %} Make it Sold</a>
+  </div>
+  <div class="full-width-content">
+    <div class="container" style="text-align: center;">
+      <h3>Act now while supply last:</h3>
+      <h1 class="title">Vanguard Limited Edition<br>
+        <small>Numbered & originally signed</small><br>
+        <small>(<em style="font-weight: bold;">78 left</em> of 99 pcs)</small>
+      </h1>
+    </div>
   </div>
 </div>
 
@@ -727,68 +796,6 @@
   </div>
 </div>
 
-<div class="feature-section feature-info">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <img class="img-responsive hidden-xs" style="max-width: 300px; margin: 0 auto" src="{{site.baseurl}}/images/home/apply-oil-finish.jpg" alt="">
-        <img class="img-responsive visible-xs" style="margin: 0 auto" src="{{site.baseurl}}/images/home/apply-oil-finish-m.jpg" alt="">
-      </div>
-      <div class="col-sm-6" v2-accordian>
-        <h2 class="title">
-          Solid
-        </h2>
-        <div class="info info-horizontal" v2-accordian-group>
-          {% include icons/cart.html %}
-          <div class="description">
-            <h3 class="info-title">
-              Quality
-            </h3>
-            <p>
-              We are obsessed with quality and reliability in everything we do, from the UI of our home page to the tiniest details of our products. ViDock-One is meticulously designed, expertly engineered and extensively tested.
-            </p>
-            <p uib-collapse="!$group.isOpen">Our design team packs over 150 years of experience. ViDock-One is made by best in class production processes. We even design the product packaging in parallel with the product to survive drops from 1 meter (3 feet) onto concrete, ensuring that your ViDock arrives without a dent while minimizing packaging material.</p>
-            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
-          </div>
-        </div>
-        <div class="info info-horizontal" v2-accordian-group>
-          {% include icons/cart-plus.html %}
-          <div class="description">
-            <h3 class="info-title">
-              Materials
-            </h3>
-            <p>ViDock-One contains no short-lived materials, such as rubber, common plastic, glue, or paint. Instead, we use anodized aircraft grade aluminum, stainless steel, durable hardwood, and screws.</p>
-            <p uib-collapse="!$group.isOpen">This is how we can guarantee 50 years of service life, backed up by a 10 years no-nonsense warranty. Use ViDock-One until you have no more use for it or you are ready to pass it on. Trust that it will not fail under normal use in your lifetime.</p>
-            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
-          </div>
-        </div>
-        <div class="info info-horizontal" v2-accordian-group>
-          {% include icons/angled-keyboard.html %}
-          <div class="description">
-            <h3 class="info-title">
-              Mature
-            </h3>
-            <p>It took us 11 generations from inception to mass production of ViDock-One . The record number of improvements between generations was 88.</p>
-            <p uib-collapse="!$group.isOpen">We not only built many prototypes, but lived and worked with them for years. We actually developed ViDock-One on ViDock-One Modular-in-One computers. We proudly believe in → Eating your own dogfood.</p>
-            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
-          </div>
-        </div>
-        <div class="info info-horizontal" v2-accordian-group>
-          {% include icons/angled-keyboard.html %}
-          <div class="description">
-            <h3 class="info-title">
-              Handmade
-            </h3>
-            <p>For us quality comes first. Although handmade is more expensive, some work still benefits from the human touch.</p>
-            <p uib-collapse="!$group.isOpen">Still no automated process can beat the quality of handmade when applying oil finish to hardwood or when polishing the edge of CNC-cut aluminum. These are just two examples.</p>
-            <button class="btn btn-primary btn-simple" v2-accordian-heading>Read {[{ $group.isOpen ? 'Less' : 'More' }]}</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="feature-section" style="background: #FFF">
   <div class="container">
     <h2 class="title text-center">
@@ -799,22 +806,6 @@
       <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Modular/ViStand-Modular-Anim.mp4" type="video/mp4">
     </video>
     <p class="text-center" style="padding-top: 10px;color: rgba(0, 0, 0, 0.54)">ViDock-One: Your friendly servant!</p>
-    </div>
-  </div>
-</div>
-
-<div class="feature-section" id="buy-section">
-  <h2 id="make-it-so">Make it so!<br><small>Your clean desk is just one click away:</small></h3>
-  <div id="buy-call-to-action">
-    <a href="{{site.baseurl}}/shop" class="btn btn-lg btn-warning btn-accent btn-round" target="_blank">{% include icons/cart.html %} Make it Sold</a>
-  </div>
-  <div class="full-width-content">
-    <div class="container" style="text-align: center;">
-      <h3>Act now while supply last:</h3>
-      <h1 class="title">Vanguard Limited Edition<br>
-        <small>Numbered & originally signed</small><br>
-        <small>(<em style="font-weight: bold;">78 left</em> of 99 pcs)</small>
-      </h1>
     </div>
   </div>
 </div>
@@ -853,7 +844,7 @@
 
     $('.slider-full').slick({
       slidesToShow: 1,
-      arrows: false
+      arrows: true
     });
   })
 </script>
