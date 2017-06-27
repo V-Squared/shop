@@ -38,37 +38,7 @@
         How it Works
       </h2>
         <div class="card" style="max-width: 640px; margin: 0 auto">
-          <div class="content">
-              <div class="content">
-                <div class="tab-content">
-                  <div class="tab-pane active" id="how-desktop">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/Desktop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-Desktop-Anim.mp4" type="video/mp4">
-                      </video>
-                  </div>
-                  <div class="tab-pane" id="how-mini">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/Mini-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-laptop">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/Laptop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/ViStand-Laptop-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-tablet">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/Tablet-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-gpu">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/eGPU-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/ViStand-eGPU-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
-              <div class="card-nav-tabs tab-material">
+        <div class="card-nav-tabs tab-material">
               <div class="header header-primary header-full header-material header-thin second-tab">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
@@ -108,6 +78,36 @@
                 </div>
               </div>
             </div>
+          <div class="content">
+              <div class="content">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="how-desktop">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/Desktop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-Desktop-Anim.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="tab-pane" id="how-mini">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/Mini-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="tab-pane" id="how-laptop">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/Laptop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/ViStand-Laptop-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="tab-pane" id="how-tablet">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/Tablet-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="tab-pane" id="how-gpu">
+                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/eGPU-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
+                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/ViStand-eGPU-Anim.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -644,7 +644,8 @@
 
     $('.slider-full').slick({
       slidesToShow: 1,
-      arrows: true
+      arrows: true,
+      dots: true
     });
   })
 </script>
