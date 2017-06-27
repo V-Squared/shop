@@ -15,6 +15,10 @@
       url: "/blog/earn-money-vidock/"
     - menu: "Eco friendly."
       url: "/blog/eco-friendly/"
+    - menu: "Space the final frontier."
+      url: "/blog/enjoy-space-frontier/"
+    - menu: "Go where no All-in-One has Gone Before"
+      url: "/blog/go-no-one-gone-before/"
 - menu: Support
   url: /support/
 - menu: Community
