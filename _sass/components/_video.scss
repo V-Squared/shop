@@ -38,7 +38,7 @@
   height: 1.5em;
   width: 3em;
   /* 0.06666em = 2px default */
-  border: 0.06666em solid #ffab40;
+  border: 0;
   /* 0.3em = 9px default */
   border-radius: 0.3em;
   /* Align center */
@@ -54,9 +54,10 @@
 .video-js .vjs-big-play-button,
 .video-js .vjs-menu-button .vjs-menu-content {
   /* IE8 - has no alpha support */
-  background-color: #2B333F;
+  background-color: $brand-accent;
   /* Opacity: 1.0 = 100%, 0.0 = 0% */
-  background-color: rgba(43, 51, 63, 0.7);
+  background-image: linear-gradient(60deg, $brand-accent-400, $brand-accent-700);
+  color: #FFF;
 }
 
 /* Slider - used for Volume bar and Progress bar */
