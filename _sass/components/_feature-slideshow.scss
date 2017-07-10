@@ -44,13 +44,13 @@
 
     &.slick-prev {
       &:before {
-        content: url("/icons/chevron-left.svg");
+        content: url($baseurl + "/icons/chevron-left.svg");
       }
       left: 30px;
     }
     &.slick-next {
       &:before {
-        content: url("/icons/chevron-right.svg");
+        content: url($baseurl + "/icons/chevron-right.svg");
       }
       right: 30px;
     }
