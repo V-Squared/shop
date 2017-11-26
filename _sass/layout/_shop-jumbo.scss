@@ -1,0 +1,16 @@
+.shop-jumbo {
+  //padding: 60px 15px;
+  border: 0;
+  margin-top: $navbar-height;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  .jumbo-visual {
+    padding: 60px 15px;
+    background-color: $gray-200;
+  }
+
+  .jumbo-content {
+    padding: 60px 15px;
+  }
+}
