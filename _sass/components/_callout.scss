@@ -8,14 +8,25 @@
   }
 }
 
-
 .callout {
   position: absolute;
-  border-bottom: 2px solid $gray-600;
+  border: 2px solid #757575;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:hover, &.active {
+    transform: scale(1.1,1.1);
+    border-color: $brand-accent;
+  }
+}
+
+.underline-callouts .callout {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid $gray-600;
   visibility: visible;
 
   &:hover, &.active {
