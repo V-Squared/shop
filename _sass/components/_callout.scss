@@ -28,9 +28,4 @@
   border-radius: 0;
   border-bottom: 2px solid $gray-600;
   visibility: visible;
-
-  &:hover, &.active {
-    transform: scale(1.1,1.1);
-    border-color: $brand-accent;
-  }
 }
