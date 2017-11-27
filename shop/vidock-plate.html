@@ -20,7 +20,7 @@ warning:
 
 <div class="feature-section" style="margin-top: 60px">
   <div class="container">
-    <h1 class="title text-center">ViDock Plate</h1>
+    <h1 class="title text-center">ViDock Plate Kit</h1>
 
     <slick class="slider" dots="true">
       <div>
@@ -88,7 +88,7 @@ warning:
     <div class="card" style="max-width: 640px; margin: 0 auto;display: block;">
       <div class="content">
         <h3 class="title text-center">
-          <span class="hidden-xs hidden-sm">ViDock-One works with any Form Factor</span>
+          <span class="hidden-xs hidden-sm">ViDock-Plate Kit works with any Form Factor</span>
           <span class="visible-xs visible-sm">Turn any form factor to All-in-One</span>
         </h3>
         <div class="card-nav-tabs tab-material">
@@ -97,15 +97,15 @@ warning:
               <div class="nav-tabs-wrapper">
                 <ul class="nav nav-tabs" data-tabs="tabs">
                   <li class="active">
-                    <a href="#desktop" data-toggle="tab">
-                      {% include icons/desktop-tower.html %}
-                      <span>Desktop</span>
-                    </a>
-                  </li>
-                  <li>
                     <a href="#mini-pc" data-toggle="tab">
                       {% include icons/mini-2-opt.html %}
                       <span>Mini-PC</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#desktop" data-toggle="tab">
+                      {% include icons/desktop-tower.html %}
+                      <span>Desktop</span>
                     </a>
                   </li>
                   <li>
@@ -132,7 +132,18 @@ warning:
           </div>
           <div class="content">
             <div class="tab-content">
-              <div class="tab-pane active" id="desktop">
+              <div class="tab-pane active" id="mini-pc">
+                <h4>Mini → Modular-in-One PC</h4>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <juxtapose class="embed-responsive-item"
+                  before-image-url="'{{site.baseurl}}/images/vidock-plate/ViDock-Plate-Kit-When-Before.jpg'"
+                  before-image-label="'Before'"
+                  after-image-url="'{{site.baseurl}}/images/vidock-plate/ViDock-Plate-Kit-When-After.png'"
+                  after-image-label="'After'">
+                  </juxtapose>
+                </div>
+              </div>
+              <div class="tab-pane" id="desktop">
                 <h4>Desktop-SFF → Modular-in-One PC
                   <button class="btn btn-primary btn-simple btn-small" data-placement="bottom" data-trigger="focus" data-toggle="popover" data-container="body" data-title="Compatibiliy" data-content="The Desktop-SFF (Small Form Factor) case shown is the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01</a>, a 14L case with the dimensions: 376 (H) x 351 (W) x 107 (D) mm. Your case will be compatible if its depth is < 120mm. If you have a bigger case, you can make your computer compatible by changing its case to a SFF case, such as the <a href='http://www.silverstonetek.com/product.php?pid=533' target='_blank'>Silverstone FTZ01.</a><br><img class='img-responsive' style='max-width: 170px; margin: 0 auto' src='http://www.silverstonetek.com/images/products/ftz01/ftz01b-34left.jpg'>" data-html="true">More</button></h4>
                   <div class="embed-responsive embed-responsive-16by9">
@@ -144,17 +155,6 @@ warning:
                   </juxtapose>
                 </div>
               </div>
-              <div class="tab-pane" id="mini-pc">
-                <h4>Mini → Modular-in-One PC</h4>
-                <div class="embed-responsive embed-responsive-16by9">
-                  <juxtapose class="embed-responsive-item"
-                  before-image-url="'{{site.baseurl}}/images/home/Mini-Before.jpg'"
-                  before-image-label="'Before'"
-                  after-image-url="'{{site.baseurl}}/images/home/Mini-After.jpg'"
-                  after-image-label="'After'">
-                </juxtapose>
-              </div>
-            </div>
             <div class="tab-pane" id="notebook">
               <h4>Laptop → Modular-in-One Docking
                 <button class="btn btn-primary btn-simple btn-small" data-placement="bottom" data-trigger="focus" data-toggle="popover" data-container="body" data-content="You have two more placement options:<img class='img-responsive' src='{{site.baseurl}}/images/home/laptop.jpg'><img class='img-responsive' src='{{site.baseurl}}/images/home/laptop-lift.jpg'>" data-html="true">More</button></h4>
@@ -198,98 +198,27 @@ warning:
 </div>
 </div>
 
-<div class="feature-section tab-select feature-modules"  style="padding: 140px 0;">
-  <div class="container text-center">
-      <h2 class="title text-center">
-        How it Works
-      </h2>
-        <div class="card" style="max-width: 640px; margin: 0 auto">
-        <div class="card-nav-tabs tab-material">
-              <div class="header header-primary header-full header-material header-thin second-tab">
-                <div class="nav-tabs-navigation">
-                  <div class="nav-tabs-wrapper">
-                    <ul class="nav nav-tabs"  data-tabs="tabs">
-                      <li class="active">
-                        <a href="#how-desktop" data-toggle="tab">
-                          {% include icons/desktop-tower.html %}
-                          <span>Desktop</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#how-mini" data-toggle="tab">
-                          {% include icons/mini-2-opt.html %}
-                          <span>Mini-PC</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#how-laptop" data-toggle="tab">
-                          {% include icons/laptop-windows.html %}
-                          <span>Laptop</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#how-tablet" data-toggle="tab">
-                          {% include icons/tablet-android.html %}
-                          <span>Tablet</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#how-gpu" data-toggle="tab">
-                          {% include icons/gpu-card.html %}
-                          <span>eGPU/Dock</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <div class="content">
-              <div class="content">
-                <div class="tab-content">
-                  <div class="tab-pane active" id="how-desktop">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/Desktop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Desktop/ViStand-Desktop-Anim.mp4" type="video/mp4">
-                      </video>
-                  </div>
-                  <div class="tab-pane" id="how-mini">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/Mini-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Mini/ViStand-Mini-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-laptop">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/Laptop-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Laptop/ViStand-Laptop-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-tablet">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/Tablet-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-Tablet/ViStand-Tablet-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="tab-pane" id="how-gpu">
-                    <video class="video-js vjs-default-skin" poster="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/eGPU-Poster.jpg" controls preload="auto" data-setup='{ "aspectRatio":"16:9" }'>
-                      <source src="{{site.baseurl}}/assets/Videos/ViDock-One-eGPU/ViStand-eGPU-Anim.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-</div>
-
 <div class="feature-section">
   <div class="container">
-    <div class="callout-container" data-tabs="tabs">
-      <img class="img-responsive" src="https://raw.githubusercontent.com/V-Squared/V-Squared.github.io/master/art/vistand/vistand-modular-all-in-one/vistand-modular-all-in-one-raw.png">
-
-      <a data-toggle="tab" href="#test1" class="callout active" style="top: 32%;left: 49%;"></a>
-      <a data-toggle="tab" href="#test2" class="callout" style="top: 2%;left: 52%;"></a>
-      <a data-toggle="tab" href="#test3" class="callout" style="top: 7%;left: 41%;"></a>
-      <a data-toggle="tab" href="#test4" class="callout" style="top: 71%;left: 55%;"></a>
-      <a data-toggle="tab" href="#test5" class="callout" style="top: 71%;left: 67%;"></a>
-
+    <div class="callout-container" style="max-width: 640px" data-tabs="tabs">
+      <img class="img-responsive" src="{{site.baseurl}}/images/vidock-plate/ViDock-Plate-Kit-Grow.jpg">
+      <ul style="list-style:none;margin:0;padding:0">
+        <li class="callout active" style="top: 32%;left: 49%;">
+          <a smartify] data-toggle="tab" href="#test1"></a>
+        </li>
+        <li class="callout" style="top: 2%;left: 52%;">
+          <a data-toggle="tab" href="#test2"></a>
+        </li>
+        <li class="callout" style="top: 7%;left: 41%;">
+          <a data-toggle="tab" href="#test3"></a>
+        </li>
+        <li class="callout" style="top: 71%;left: 55%;">
+          <a data-toggle="tab" href="#test4"></a>
+        </li>
+        <li class="callout" style="top: 71%;left: 67%;">
+          <a data-toggle="tab" href="#test5"></a>
+        </li>
+      </ul>
     </div>
     <div class="tab-content">
 
