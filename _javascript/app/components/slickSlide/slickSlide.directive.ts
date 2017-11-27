@@ -17,6 +17,7 @@ export const slickSlideDirective = (): ng.IDirective => ({
       slidesToShow: scope.slidesToShow,
       centerMode: scope.centerMode,
       centerPadding: scope.centerPadding,
+      variableWidth: true,
       responsive: [{
         breakpoint: 768,
         setting: {
