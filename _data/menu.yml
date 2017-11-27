@@ -1,5 +1,7 @@
 - menu: About
   url: /about/
+- menu: Know How
+  url: /404/
 - menu: Blog
   url: /blog/
   subitems:

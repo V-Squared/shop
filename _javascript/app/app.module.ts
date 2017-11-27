@@ -12,12 +12,12 @@ import "../vendors/ui-bootstrap-collapse.js";
 import "../vendors/angular-slick.min.js"
 
 // Common
-import { commonModule } from "./common/common.modules";
+import { commonModule } from "./common/common.modules.ts";
 
 // Components
-import { componentsModule } from "./components/components.module";
+import { componentsModule } from "./components/components.module.ts";
 
-import { appConfig } from "./app.config";
+import { appConfig } from "./app.config.ts";
 
 angular
   .module("app", [
