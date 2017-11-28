@@ -8,9 +8,17 @@
     // margin-right: auto;
   }
 
-  .nav-tabs > li > a {
-    line-height: 32px;
-    text-transform: none;
-    font-size: 21px;
+  .nav-tabs {
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+
+       > a {
+        line-height: 32px;
+        text-transform: none;
+        font-size: 21px;
+      }
+    }
   }
 }
