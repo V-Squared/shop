@@ -9,6 +9,16 @@
 #product-showcase {
   background: #FFF;
 
+  #product-slide {
+    p {
+      font-size: 1.5em;
+      padding-top: 25px;
+    }
+    .slick-dots {
+      bottom: 65px;
+    }
+  }
+
   #product-buy {
     text-align: center;
 

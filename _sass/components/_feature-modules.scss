@@ -1,6 +1,8 @@
 .feature-modules {
-  padding-top: 50px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60;
+  //padding-top: 50px;
+  //padding-bottom: 120px;
 
   .title {
     @include media-query($on-desktop) {

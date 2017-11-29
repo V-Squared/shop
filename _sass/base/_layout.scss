@@ -1,0 +1,29 @@
+.row-flex {
+  display: flex;
+
+  > [class^="col-*"] {
+    float:none !important;
+  }
+
+  &.row-sm-flex {
+    @include media-query($on-mobile) {
+      display: block;
+    }
+  }
+}
+
+.vertical-align-wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+
+  .vertical-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-query($on-mobile) {
+      position: static;
+      transform: none;
+    }
+  }
+}
