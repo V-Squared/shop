@@ -47,6 +47,31 @@
 
   }
 
+  .header-transparent {
+    margin-bottom:0;
+    background-color: transparent;
+    box-shadow: none;
+
+    .nav-tabs {
+      li {
+
+        &:before {
+          height: 3px;
+          bottom: 1px;
+        }
+
+        &:hover:before, &.active:before {
+          background-color: $brand-color;
+        }
+
+        > a {
+          background-color: transparent;
+          color: #555 !important;
+        }
+      }
+    }
+  }
+
   .header-gray {
     //background: linear-gradient(60deg, $gray-400, $gray-700);
   }

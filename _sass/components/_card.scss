@@ -1,6 +1,11 @@
 .card {
   margin-bottom: 10px;
 
+  &.transparent-card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
   .card-content {
     padding: 20px;
     position: relative;
