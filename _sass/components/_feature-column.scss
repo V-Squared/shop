@@ -1,0 +1,16 @@
+.feature-column {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  .title {
+    font-weight: bold;
+    margin-top:0;
+    margin-bottom: 0;
+    color: $text-color;
+  }
+
+  p {
+    font-size: 1em;
+    color: $text-color;
+  }
+}
