@@ -17,6 +17,9 @@ blockquote {
   tr > th {
     font-weight: bold;
   }
+  tr > td {
+    text-align: center;
+  }
   tr > td:first-child {
     text-align: right;
     font-weight: bold;
