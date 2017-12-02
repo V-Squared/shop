@@ -31,3 +31,10 @@
 .text-container {
   max-width: 650px; // Material Design Standard for text container width
 }
+
+// 5 colum layout: 2.4
+.col-md-24 {
+  @media (min-width: 992px) {
+    width: 20%;  
+  }
+}
