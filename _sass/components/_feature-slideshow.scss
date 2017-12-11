@@ -44,7 +44,8 @@
 
     &.slick-prev {
       &:before {
-        content: url($baseurl + "/icons/chevron-left.svg");
+        content: "";
+        background: url($baseurl + "/icons/chevron-left.svg");
       }
       left: 30px;
     }
