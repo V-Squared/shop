@@ -1,15 +1,17 @@
 .feature-column {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 
   .material-icons {
     width: 50px;
+    color: $brand-color;
   }
 
   .title {
     margin-top:0;
     margin-bottom: 0;
-    color: $brand-color;
+    color: $text-color;
+    font-weight: bold;
   }
 
   p {
